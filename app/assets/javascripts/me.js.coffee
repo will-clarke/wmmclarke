@@ -3,6 +3,19 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 jQuery ->
+
+
+  $("#everything").click ->
+    alert "Handler for .click() called."
+
+  $('#everything').click ->   
+    alert "omg."
+    $("#container").isotope
+      sortBy: "random"
+      itemSelector: ".element"
+      masonry:
+        columnWidth: 295
+
   $("#nav").onePageNav
     begin: ->
       console.log "start"
@@ -49,7 +62,12 @@ jQuery ->
       colors: colors[i - 1]
 
     i++
-                                
+        
+
+
+
+  
+                             
   # $container.isotope({ filter: '.code' })
   # $('#filter .code')  
 

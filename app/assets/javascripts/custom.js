@@ -66,11 +66,15 @@ $.Isotope.prototype._getCenteredMasonryColumns = function() {
     var $container = $('#container');
       
     $container.isotope({
+      sortBy: 'random',
       itemSelector : '.element',
       masonry : {
         columnWidth : 295
       }
+      // ,
+      // sortBy: 'random'
     });
+
       
     
       var $optionSets = $('#options .option-set'),
@@ -105,6 +109,7 @@ $.Isotope.prototype._getCenteredMasonryColumns = function() {
       });
   });
   
+
 /* =========================================================
 **************************prettyPhoto***********************
 ==========================================================*/

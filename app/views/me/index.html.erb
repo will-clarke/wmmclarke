@@ -11,6 +11,7 @@
                 <ul class="nav" id="nav">
                     <li class="current"><a href="#home">Home</a></li>
                     <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Interesting Stuff</a></li>
                     <li><a href="#team">Our Team</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#works">Works</a></li>
@@ -70,13 +71,14 @@
                 <div class="typo1">
                     <div class="wrapper clearfix">
                         <div class="section-title">
-                            <h3 class="heading">Portfolio</h3>
+                            <h3 class="heading">Interesting Stuff</h3>
                             <h6> </h6>
                             
                             <div id="options" class="clearfix">
                                 <ul id="filters" class="option-set clearfix" data-option-key="filter">
                                     <li><a href="#filter" data-option-value=".code">Code Stuff</a></li>
                                     <li><a href="#filter" data-option-value=".normal">Normal Stuff</a></li>
+                                    <li><a href="#filter" id="everything" data-option-value=".code, .normal">Everything</a></li>
 <!--                                     <li><a href="#filter" data-option-value=".ios-app">Prototype</a></li>
                                     <li><a href="#filter" data-option-value=".graphic">Photography</a></li> -->
                                 </div>
@@ -87,7 +89,7 @@
                                 <!-- style="position: relative; overflow: hidden; height: 534px; width: 1475px;"> -->
                                     
                                     
-                                    <li class="element code isotope-item" >
+                                    <li class="element code isotope-item" data-number="1" >
                                         <figure>
                                             <%= image_tag 'stuff/ruby.png' %>
                                             <figcaption>
@@ -102,7 +104,7 @@
                                         </figure>
                                         
                                     </li>
-                                    <li class="element code isotope-item" >
+                                    <li class="element code isotope-item" data-number="2" >
                                         <figure>
                                             <%= image_tag 'stuff/jquery.png' %>
                                             <figcaption>
@@ -117,7 +119,7 @@
                                         </figure>
                                         
                                     </li>
-                                    <li class="element normal isotope-item" >
+                                    <li class="element normal isotope-item" data-number="3" >
                                         <figure>
                                             <%= image_tag 'stuff/axolotl.png' %>
                                             <figcaption>
@@ -132,7 +134,7 @@
                                         </figure>
                                         
                                     </li>
-                                    <li class="element code isotope-item" >
+                                    <li class="element code isotope-item" data-number="4" >
                                         <figure>
                                             <%= image_tag 'stuff/rails.png' %>
                                             <figcaption>
@@ -147,7 +149,7 @@
                                         </figure>
                                         
                                     </li>
-                                    <li class="element normal isotope-item" >
+                                    <li class="element normal isotope-item" data-number="5" >
                                         <figure>
                                             <%= image_tag 'stuff/bonsai.png' %>
                                             <figcaption>
@@ -162,7 +164,7 @@
                                         </figure>
                                         
                                     </li>
-                                    <li class="element normal isotope-item" >
+                                    <li class="element normal isotope-item" data-number="6" >
                                         <figure>
                                             <%#= image_tag 'stuff/wasp.jpg' %>
                                             <%= image_tag 'stuff/bees.png' %>
@@ -178,7 +180,7 @@
                                         </figure>
                                         
                                     </li>
-                                    <li class="element normal isotope-item" >
+                                    <li class="element normal isotope-item" data-number="7" >
                                         <figure>
                                             <%= image_tag 'stuff/bike2.png' %>
                                             <figcaption>
@@ -193,7 +195,7 @@
                                         </figure>
                                         
                                     </li>
-                                    <li class="element normal isotope-item" >
+                                    <li class="element normal isotope-item" data-number="8" >
                                         <figure>
                                             <%= image_tag 'stuff/skull.png' %>
                                             <figcaption>
@@ -208,7 +210,7 @@
                                         </figure>
                                         
                                     </li>
-                                    <li class="element code isotope-item" >
+                                    <li class="element code isotope-item" data-number="9" >
                                         <figure>
                                             <%= image_tag 'stuff/analytics.png' %>
                                             <figcaption>
@@ -223,7 +225,7 @@
                                         </figure>
                                         
                                     </li>
-                                    <li class="element code isotope-item" >
+                                    <li class="element code isotope-item" data-number="10" >
                                         <figure>
                                             <%= image_tag 'stuff/javascript.png' %>
                                             <figcaption>
@@ -238,7 +240,7 @@
                                         </figure>
                                         
                                     </li>
-                                    <li class="element normal isotope-item" >
+                                    <li class="element normal isotope-item" data-number="11" >
                                         <figure>
                                             <%= image_tag 'stuff/go.png' %>
                                             <figcaption>
@@ -253,7 +255,7 @@
                                         </figure>
                                         
                                     </li>
-                                    <li class="element code isotope-item" >
+                                    <li class="element code isotope-item" data-number="12" >
                                         <figure>
                                            
                                             <%= image_tag 'stuff/transparentHadoop.png' %>
@@ -269,7 +271,7 @@
                                         </figure>
                                         
                                     </li>
-                                    <li class="element normal isotope-item" >
+                                    <li class="element normal isotope-item" data-number="13" >
                                         <figure>
                                             <%= image_tag 'stuff/pangolin.png' %>
                                             <figcaption>
@@ -284,7 +286,7 @@
                                         </figure>
                                         
                                     </li>
-                                    <li class="element normal isotope-item" >
+                                    <li class="element normal isotope-item" data-number="14" >
                                         <figure>
                                             <%= image_tag 'stuff/taj.png' %>
                                             <figcaption>
@@ -299,7 +301,7 @@
                                         </figure>
                                         
                                     </li>
-                                    <li class="element code isotope-item" >
+                                    <li class="element code isotope-item" data-number="15" >
                                         <figure>
                                             <%= image_tag 'stuff/tech.png' %>
                                             <figcaption>
@@ -314,7 +316,7 @@
                                         </figure>
                                         
                                     </li>
-                                    <li class="element code isotope-item" >
+                                    <li class="element code isotope-item" data-number="16" >
                                         <figure>
                                             <%= image_tag 'stuff/github.png' %>
                                             <figcaption>
@@ -497,7 +499,7 @@
                                 </div>
                             </div>
 
-                            
+
                             <div class="about" id="about">
                                 <div class="wrap">
                                     <h2>What People say about us</h2>
