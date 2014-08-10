@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'me/index'
+  root 'me#index'
 
   get 'me/blog'
 
