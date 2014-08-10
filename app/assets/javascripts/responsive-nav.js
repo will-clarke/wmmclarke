@@ -1,7 +1,8 @@
 
-var ww = document.body.clientWidth;
+var $ww
 
 $(document).ready(function() {
+var $ww = document.body.clientWidth;
 	$(".nav li a").each(function() {
 		if ($(this).next().length > 0) {
 			$(this).addClass("parent");
@@ -17,12 +18,12 @@ $(document).ready(function() {
 })
 
 $(window).bind('resize orientationchange', function() {
-	ww = document.body.clientWidth;
+	$ww = document.body.clientWidth;
 	adjustMenu();
 });
 
 var adjustMenu = function() {
-	if (ww < 800) {
+	if ($ww < 800) {
 		$(".toggleMenu").css("display", "inline-block");
 		if (!$(".toggleMenu").hasClass("active")) {
 			$(".nav").hide();
@@ -36,7 +37,7 @@ var adjustMenu = function() {
 			$(this).parent("li").toggleClass("hover");
 		});
 	} 
-	else if (ww >= 800) {
+	else if ($ww >= 800) {
 		$(".toggleMenu").css("display", "none");
 		$(".nav").show();
 		$(".nav li").removeClass("hover");

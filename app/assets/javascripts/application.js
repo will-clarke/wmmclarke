@@ -15,5 +15,7 @@
 //= require turbolinks
 //= require jquery.isotope.min
 //= require custom
+//= require jquery.fancybox
+//= require responsive-nav
 //= require modernizr.custom
 //= require_tree .

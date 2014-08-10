@@ -5,17 +5,12 @@
 jQuery ->
 
 
-  $("#everything").click ->
-    alert "Handler for .click() called."
 
-  $('#everything').click ->   
-    alert "omg."
-    $("#container").isotope
-      sortBy: "random"
-      itemSelector: ".element"
-      masonry:
-        columnWidth: 295
+  # $("#everything").click ->
+  #   alert 'om'
+  #   $('#container').isotope("updateSortData").isotope sortBy: "random"
 
+    
   $("#nav").onePageNav
     begin: ->
       console.log "start"
@@ -45,7 +40,7 @@ jQuery ->
   filterList.init()
 
 
-
+$(document).ready ->
   colors = [ [ "#dfe8ed", "#30bae7" ], [ "#dfe8ed", "#d74680" ], [ "#dfe8ed", "#15c7a8" ], [ "#dfe8ed", "#eb7d4b" ] ]
   i = 1
 
