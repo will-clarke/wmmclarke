@@ -1,0 +1,612 @@
+<div class="header" id="home">
+    <div class="header_top">
+        <div class="wrap">
+            <div class="logo">
+                <%= image_tag "logo.png" %>
+            </div>
+            <div class="menu">
+                <a class="toggleMenu" href="#" style="display: none;">
+                    <%= image_tag "nav.png" %>
+                </a>
+                <ul class="nav" id="nav">
+                    <li class="current"><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#team">Our Team</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <div class="clear"></div>
+                </ul>
+                <%= javascript_include_tag 'responsive-nav.js'    %>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="header_desc">
+        <div class="wrap">
+            <p>Hi there! We are the new kids on the block <br />and we build awesome websites and mobile apps.</p>
+            <div class="button"><a class="fancybox-media" href="http://vimeo.com/33790882">Watch the video</a></div>
+        </div>
+    </div>
+</div>
+<div class="main">
+    <div class="content">
+        <div class="services" id="services">
+            <div class="wrap">
+                <h2>Services we Provide</h2>
+                <div class="line green"><span> </span></div>
+                <h4>We are working with both individuals and businesses from all over the globe to create awesome websites and applications.</h4>
+                <div class="services_grids">
+                    <div class="section group">
+                        <div class="grid_1_of_4 services_1_of_4">
+                            <%= image_tag "flag.png" %>
+                            <h3>Branding</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+                        </div>
+                        <div class="grid_1_of_4 services_1_of_4">
+                            <%= image_tag "design.png" %>
+                            <h3>Design</h3>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
+                        </div>
+                        <div class="grid_1_of_4 services_1_of_4">
+                            <%= image_tag "development.png" %>
+                            <h3>Development</h3>
+                            <p>At vero eos et accusamus et iusto odio dignissimos qui blanditiis praesentium.</p>
+                        </div>
+                        <div class="grid_1_of_4 services_1_of_4">
+                            <%= image_tag "rocket.png" %>
+                            <h3>Rocket science</h3>
+                            <p>Et harum quidem rerum est et expedita distinctio. Nam libero tempore.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="cbp-so-scroller" class="cbp-so-scroller">
+            <div id="portfolio" class="clearfix">
+                <div class="portfolio-bg"> </div>
+                <div class="typo1">
+                    <div class="wrapper clearfix">
+                        <div class="section-title">
+                            <h3 class="heading">Portfolio</h3>
+                            <h6> </h6>
+                            
+                            <div id="options" class="clearfix">
+                                <ul id="filters" class="option-set clearfix" data-option-key="filter">
+                                    <li><a href="#filter" data-option-value=".web-design">Web-design</a></li>
+                                    <li><a href="#filter" data-option-value=".photo">UI Design</a></li>
+                                    <li><a href="#filter" data-option-value=".ios-app">Prototype</a></li>
+                                    <li><a href="#filter" data-option-value=".graphic">Photography</a></li>
+                                </div>
+                                
+                                
+                                <ul id="container" class="clickable cs-style-5 grid clearfix isotope" >
+                                <!-- <ul id="container" class="clickable cs-style-5 grid clearfix isotope" > -->
+                                <!-- style="position: relative; overflow: hidden; height: 534px; width: 1475px;"> -->
+                                    
+                                    
+                                    <li class="element graphic isotope-item" >
+                                        <figure>
+                                            <%= image_tag 'stuff/ruby.png' %>
+                                            <figcaption>
+                                            <h3>Ruby</h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">Ruby's a concise language. It's how you'd write English. It's lovely. And you should use it.</span>
+                                            </div>
+                                            <footer>
+                                                <div class="nivo-lightbox-demo"> <p> <a href="https://www.ruby-lang.org/en/" data-lightbox-gallery="gallery1" class="nivo-lightbox-demo"> View</a> </p></div>
+                                            </footer>
+                                            </figcaption>
+                                        </figure>
+                                        
+                                    </li>
+                                    <li class="element graphic isotope-item" >
+                                        <figure>
+                                            <%= image_tag 'stuff/jquery.jpg' %>
+                                            <figcaption>
+                                            <h3>jQuery</h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">Lets you do javascript stuff really <em>really</em> easily. 10/10.</span>
+                                            </div>
+                                            <footer>
+                                                <div class="nivo-lightbox-demo"> <p> <a href="http://jquery.com/" data-lightbox-gallery="gallery1" class="nivo-lightbox-demo"> View</a> </p></div>
+                                            </footer>
+                                            </figcaption>
+                                        </figure>
+                                        
+                                    </li>
+                                    <li class="element graphic isotope-item" >
+                                        <figure>
+                                            <%= image_tag 'stuff/axolotl.jpg' %>
+                                            <figcaption>
+                                            <h3>Axolotls</h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">A neotenic salamander. Need I say more?</span>
+                                            </div>
+                                            <footer>
+                                                <div class="nivo-lightbox-demo"> <p> <a href="http://en.wikipedia.org/wiki/Axolotl" data-lightbox-gallery="gallery1" class="nivo-lightbox-demo"> View</a> </p></div>
+                                            </footer>
+                                            </figcaption>
+                                        </figure>
+                                        
+                                    </li>
+                                    <li class="element graphic isotope-item" >
+                                        <figure>
+                                            <%= image_tag 'stuff/rails.png' %>
+                                            <figcaption>
+                                            <h3>Rails</h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">The most common way of doing websites with Ruby. Hyper clever magic in the background</span>
+                                            </div>
+                                            <footer>
+                                                <div class="nivo-lightbox-demo"> <p> <a href="http://rubyonrails.org/" data-lightbox-gallery="gallery1" class="nivo-lightbox-demo"> View</a> </p></div>
+                                            </footer>
+                                            </figcaption>
+                                        </figure>
+                                        
+                                    </li>
+                                    <li class="element graphic isotope-item" >
+                                        <figure>
+                                            <%= image_tag 'stuff/bonsai.jpg' %>
+                                            <figcaption>
+                                            <h3>Bonsai Trees</h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">Mini trees from Japan.</span>
+                                            </div>
+                                            <footer>
+                                                <div class="nivo-lightbox-demo"> <p> <a href="http://en.wikipedia.org/wiki/Bonsai" data-lightbox-gallery="gallery1" class="nivo-lightbox-demo"> View</a> </p></div>
+                                            </footer>
+                                            </figcaption>
+                                        </figure>
+                                        
+                                    </li>
+                                    <li class="element graphic isotope-item" >
+                                        <figure>
+                                            <%= image_tag 'stuff/wasp.jpg' %>
+                                            <figcaption>
+                                            <h3>Social Insects</h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">Superorganisms are super</span>
+                                            </div>
+                                            <footer>
+                                                <div class="nivo-lightbox-demo"> <p> <a href="http://en.wikipedia.org/wiki/Eusociality#In_insects" data-lightbox-gallery="gallery1" class="nivo-lightbox-demo"> View</a> </p></div>
+                                            </footer>
+                                            </figcaption>
+                                        </figure>
+                                        
+                                    </li>
+                                    <li class="element graphic isotope-item" >
+                                        <figure>
+                                            <%= image_tag 'stuff/www.youtube.com/embed/QH2-TGUlwu4' %>
+                                            <figcaption>
+                                            <h3>Pointless Videos</h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">There's nothing clever to say here...</span>
+                                            </div>
+                                            <footer>
+                                                <div class="nivo-lightbox-demo"> <p> <a href="https://www.youtube.com/watch?v=QH2-TGUlwu4" data-lightbox-gallery="gallery1" class="nivo-lightbox-demo"> View</a> </p></div>
+                                            </footer>
+                                            </figcaption>
+                                        </figure>
+                                        
+                                    </li>
+                                    <li class="element graphic isotope-item" >
+                                        <figure>
+                                            <%= image_tag 'stuff/anth.jpg' %>
+                                            <figcaption>
+                                            <h3>Anthropology</h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">Anthropology's an interesting subject. Lots about people. Chances are, you're a person too.</span>
+                                            </div>
+                                            <footer>
+                                                <div class="nivo-lightbox-demo"> <p> <a href="http://en.wikipedia.org/wiki/Anthropology" data-lightbox-gallery="gallery1" class="nivo-lightbox-demo"> View</a> </p></div>
+                                            </footer>
+                                            </figcaption>
+                                        </figure>
+                                        
+                                    </li>
+                                    <li class="element graphic isotope-item" >
+                                        <figure>
+                                            <%= image_tag 'stuff/analytics.jpg' %>
+                                            <figcaption>
+                                            <h3>Analytics / Adwords</h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">I've spent quite a long time using Analytics and Adwords. Hopefully I know my way round them...</span>
+                                            </div>
+                                            <footer>
+                                                <div class="nivo-lightbox-demo"> <p> <a href="http://www.google.com/analytics/" data-lightbox-gallery="gallery1" class="nivo-lightbox-demo"> View</a> </p></div>
+                                            </footer>
+                                            </figcaption>
+                                        </figure>
+                                        
+                                    </li>
+                                    <li class="element graphic isotope-item" >
+                                        <figure>
+                                            <%= image_tag 'stuff/javascript.png' %>
+                                            <figcaption>
+                                            <h3>Javascript</h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">Make websites interactive! This versatile language lets you do lots of (often web-related) things. Rumour has it that this site uses it sometimes...</span>
+                                            </div>
+                                            <footer>
+                                                <div class="nivo-lightbox-demo"> <p> <a href="http://en.wikipedia.org/wiki/JavaScript" data-lightbox-gallery="gallery1" class="nivo-lightbox-demo"> View</a> </p></div>
+                                            </footer>
+                                            </figcaption>
+                                        </figure>
+                                        
+                                    </li>
+                                    <li class="element graphic isotope-item" >
+                                        <figure>
+                                            <%= image_tag 'stuff/go.jpg' %>
+                                            <figcaption>
+                                            <h3>Go</h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">Please play go. It's a perfectly balanced game of attack & defence, of territory and influence.</span>
+                                            </div>
+                                            <footer>
+                                                <div class="nivo-lightbox-demo"> <p> <a href="http://en.wikipedia.org/wiki/Go_(game)" data-lightbox-gallery="gallery1" class="nivo-lightbox-demo"> View</a> </p></div>
+                                            </footer>
+                                            </figcaption>
+                                        </figure>
+                                        
+                                    </li>
+                                    <li class="element graphic isotope-item" >
+                                        <figure>
+                                            <%= image_tag 'stuff/hadoop.jpg' %>
+                                            <figcaption>
+                                            <h3>Hadoop / Hive / SQL</h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">Big data. Far out, man. Use Hive or SQL to extract information from lots of data.</span>
+                                            </div>
+                                            <footer>
+                                                <div class="nivo-lightbox-demo"> <p> <a href="http://en.wikipedia.org/wiki/Apache_Hive" data-lightbox-gallery="gallery1" class="nivo-lightbox-demo"> View</a> </p></div>
+                                            </footer>
+                                            </figcaption>
+                                        </figure>
+                                        
+                                    </li>
+                                    <li class="element graphic isotope-item" >
+                                        <figure>
+                                            <%= image_tag 'stuff/pangolin.jpg' %>
+                                            <figcaption>
+                                            <h3>Pangolins</h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">Type 'baby pangolin' into Google NOW. Seriously. I'll wait.</span>
+                                            </div>
+                                            <footer>
+                                                <div class="nivo-lightbox-demo"> <p> <a href="https://www.google.co.uk/search?q=pangolin&tbm=isch" data-lightbox-gallery="gallery1" class="nivo-lightbox-demo"> View</a> </p></div>
+                                            </footer>
+                                            </figcaption>
+                                        </figure>
+                                        
+                                    </li>
+                                    <li class="element graphic isotope-item" >
+                                        <figure>
+                                            <%= image_tag 'stuff/taj.jpg' %>
+                                            <figcaption>
+                                            <h3>Travelling</h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">Travel's fun and important. We should all travel more.</span>
+                                            </div>
+                                            <footer>
+                                                <div class="nivo-lightbox-demo"> <p> <a href="http://www.theguardian.com/travel" data-lightbox-gallery="gallery1" class="nivo-lightbox-demo"> View</a> </p></div>
+                                            </footer>
+                                            </figcaption>
+                                        </figure>
+                                        
+                                    </li>
+                                    <li class="element graphic isotope-item" >
+                                        <figure>
+                                            <%= image_tag 'stuff/tech.jpg' %>
+                                            <figcaption>
+                                            <h3>Tech Companies</h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">Technology's pretty amazing. As are some of the most important and ground-breaking tech firms.</span>
+                                            </div>
+                                            <footer>
+                                                <div class="nivo-lightbox-demo"> <p> <a href="http://www.theguardian.com/technology" data-lightbox-gallery="gallery1" class="nivo-lightbox-demo"> View</a> </p></div>
+                                            </footer>
+                                            </figcaption>
+                                        </figure>
+                                        
+                                    </li>
+                                    <li class="element graphic isotope-item" >
+                                        <figure>
+                                            <%= image_tag 'stuff/github.jpg' %>
+                                            <figcaption>
+                                            <h3>Github</h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">Code</span>
+                                            </div>
+                                            <footer>
+                                                <div class="nivo-lightbox-demo"> <p> <a href="https://github.com/wmmc" data-lightbox-gallery="gallery1" class="nivo-lightbox-demo"> View</a> </p></div>
+                                            </footer>
+                                            </figcaption>
+                                        </figure>
+                                        
+                                    </li>
+                                    <li class="element photo isotope-item" >
+                                        <figure>
+                                            <%= image_tag 'stuff/rails.png' %>
+                                            <figcaption>
+                                            <h3><a href="#">OMG. Totes.</a></h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories"><a href="#">print art</a></span>
+                                                <span class="entry-categories"><a href="#">photo</a></span>
+                                            </div>
+                                            <footer>
+                                                <div id="nivo-lightbox-demo"><p> <a href="images/pf-1.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> View</a> </p></div>
+                                            </footer>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    
+                                    <div class="clear"> </div>
+                                </div>
+                            </div>
+
+                            <%= javascript_include_tag 'jquery.isotope.min.js' %>
+                            <%= javascript_include_tag 'jquery.prettyPhoto.js' %>
+                            <%= javascript_include_tag 'jquery.custom.js' %>
+                            <%= javascript_include_tag 'jquery.modernizr.custom.js' %>
+
+                            <!-- portfolio_script_javascript
+                            // <script src="js/jquery.isotope.min.js"></script>
+                            // <script src="js/jquery.prettyPhoto.js"></script>
+                            // <script src="js/custom.js"></script>
+                            // <script src="js/modernizr.custom.js"></script>
+                            -->
+                            <div class="team" id="team">
+                                <div class="wrap">
+                                    <h2>MEET OUR BEAUTIFUL TEAM</h2>
+                                    <div class="line skyblue"><span> </span></div>
+                                    <h4>We are a small team of designers and developers, who help brands with big ideas.</h4>
+                                    <div class="services_grids">
+                                        <div class="section group">
+                                            <div class="grid_1_of_4 team_1_of_4">
+                                                <%= image_tag "team1.jpg" %>
+                                                <h3>ANNE HATHAWAY</h3>
+                                                <h5>CEO / Marketing Guru</h5>
+                                                <p>Lorem ipsum dolor sit amet,consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
+                                                <div class="social_networks">
+                                                    <ul>
+                                                        <li><a href=""> <i class="facebook"> </i> </a></li>
+                                                        <li><a href=""><i class="twitter"> </i> </a></li>
+                                                        <li><a href=""><i class="inliked"> </i> </a></li>
+                                                        <li><a href=""><i class="mail"> </i> </a></li>
+                                                        <div class="clear"> </div>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="grid_1_of_4 team_1_of_4">
+                                                <%= image_tag "team2.jpg" %>
+                                                <h3>Kate Upton</h3>
+                                                <h5>Creative Director</h5>
+                                                <p>Duis aute irure dolor in in voluptate velit esse cillum dolore fugiat nulla pariatur. Excepteur sint occaecat non diam proident.</p>
+                                                <div class="social_networks">
+                                                    <ul>
+                                                        <li><a href=""><i class="twitter"> </i> </a></li>
+                                                        <li><a href=""><i class="inliked"> </i> </a></li>
+                                                        <li><a href=""><i class="mail"> </i> </a></li>
+                                                        <div class="clear"> </div>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="grid_1_of_4 team_1_of_4">
+                                                <%= image_tag "team3.jpg" %>
+                                                <h3>Olivia Wilde</h3>
+                                                <h5>Lead Designer</h5>
+                                                <p>Nemo enim ipsam voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
+                                                <div class="social_networks">
+                                                    <ul>
+                                                        <li><a href=""> <i class="facebook"> </i> </a></li>
+                                                        <li><a href=""><i class="twitter"> </i> </a></li>
+                                                        <li><a href=""><i class="inliked"> </i> </a></li>
+                                                        <li><a href=""><i class="mail"> </i> </a></li>
+                                                        <div class="clear"> </div>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="grid_1_of_4 team_1_of_4">
+                                                <%= image_tag "team4.jpg" %>
+                                                <h3>Ashley Greene</h3>
+                                                <h5>SEO / Developer</h5>
+                                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                                                <div class="social_networks">
+                                                    <ul>
+                                                        <li><a href=""> <i class="facebook"> </i> </a></li>
+                                                        <li><a href=""><i class="twitter"> </i> </a></li>
+                                                        <li><a href=""><i class="mail"> </i> </a></li>
+                                                        <div class="clear"> </div>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Skills" id="skills">
+                                <div class="wrap">
+                                    <h2>WE GOT SKILLS!</h2>
+                                    <div class="line skyblue"><span> </span></div>
+                                    <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
+                                    <div class="services_grids">
+                                        <div id="canvas">
+                                            <div class="section group">
+                                                <div class="grid_1_of_4 team_1_of_4">
+                                                    <div class="circle" id="circles-1"></div>
+                                                    <h3>Web Design</h3>
+                                                </div>
+                                                <div class="grid_1_of_4 team_1_of_4">
+                                                    <div class="circle" id="circles-2"></div>
+                                                    <h3>Html / Css</h3>
+                                                </div>
+                                                <div class="grid_1_of_4 team_1_of_4">
+                                                    <div class="circle" id="circles-3"></div>
+                                                    <h3>Graphic Design</h3>
+                                                </div>
+                                                <div class="grid_1_of_4 team_1_of_4">
+                                                    <div class="circle" id="circles-4"></div>
+                                                    <h3>Ui / Ux</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <script type="text/javascript" src="js/circles.js"></script>
+                                <script>
+                                var colors = [
+                                ['#dfe8ed', '#30bae7'], ['#dfe8ed', '#d74680'], ['#dfe8ed', '#15c7a8'], ['#dfe8ed', '#eb7d4b']
+                                ];
+                                
+                                for (var i = 1; i <= 5; i++) {
+                                var child = document.getElementById('circles-' + i),
+                                percentage = 50 + (i * 10);
+                                
+                                Circles.create({
+                                id:         child.id,
+                                percentage: percentage,
+                                radius:     80,
+                                width:      15,
+                                number:     percentage / 10,
+                                text:       '%',
+                                colors:     colors[i - 1]
+                                });
+                                }
+                                
+                                </script>
+                            </div>
+                            <div class="portfolio-grid" id="works">
+                                <div class="wrap">
+                                    <h2>Our Portfolio</h2>
+                                    <div class="line yellow"><span> </span></div>
+                                    <h4>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur, adipisci velit, sed quia non numquam</h4>
+                                    
+                                    <div class="container">
+                                        <ul id="filters" class="clearfix">
+                                            <li><span class="filter active" data-filter="web apps icons">All</span></li>
+                                            <li><span class="filter" data-filter="web">Web</span></li>
+                                            <li><span class="filter" data-filter="apps">Apps</span></li>
+                                            <li><span class="filter" data-filter="icons">Icons</span></li>
+                                        </ul>
+                                        <div id="portfoliolist">
+                                            <div class="portfolio web icons" data-cat="web">
+                                                <div class="portfolio-wrapper">
+                                                    <a href="#">
+                                                        <%= image_tag "portfolio_img1.png" %>
+                                                        <h5>Isometric Perspective Mock-Up</h5>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="portfolio apps" data-cat="apps">
+                                                <div class="portfolio-wrapper">
+                                                    <a href="#">
+                                                        <%= image_tag "portfolio_img2.png" %>
+                                                        <h5>Isometric Perspective Mock-Up</h5>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio icons web" data-cat="web">
+                                                <div class="portfolio-wrapper">
+                                                    <a href="#">
+                                                        <%= image_tag "portfolio_img3.png" %>
+                                                        <h5>Isometric Perspective Mock-Up</h5>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio icons" data-cat="icons">
+                                                <div class="portfolio-wrapper">
+                                                    <a href="#">
+                                                        <%= image_tag "portfolio_img4.png" %>
+                                                        <h5>Isometric Perspective Mock-Up</h5>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="button green-button"><a href="#">Load more Projects</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="about" id="about">
+                                <div class="wrap">
+                                    <h2>What People say about us</h2>
+                                    <div class="line rose"><span> </span></div>
+                                    <h4>Our clients love us!</h4>
+                                    <div class="testimonials">
+                                        <div class="section group">
+                                            <div class="listview_1_of_2 images_1_of_2">
+                                                <div class="listimg listimg_2_of_1">
+                                                    <%= image_tag "client_img1.jpg" %>
+                                                </div>
+                                                <div class="text list_2_of_1">
+                                                    <p>“Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.”</p>
+                                                    <h3>Chanel Iman</h3>
+                                                    <h5>CEO of pinterest</h5>
+                                                </div>
+                                            </div>
+                                            <div class="listview_1_of_2 images_1_of_2">
+                                                <div class="listimg listimg_2_of_1">
+                                                    <%= image_tag "client_img2.jpg" %>
+                                                </div>
+                                                <div class="text list_2_of_1">
+                                                    <p>“Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.”</p>
+                                                    <h3>ADRIANA LIMA</h3>
+                                                    <h5>Founder of Instagram</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="testimonials2">
+                                        <div class="section group">
+                                            <div class="listview_1_of_2 images_1_of_2">
+                                                <div class="listimg listimg_2_of_1">
+                                                    <%= image_tag "client_img3.jpg" %>
+                                                </div>
+                                                <div class="text list_2_of_1">
+                                                    <p>“Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.”</p>
+                                                    <h3>ANNE HATHAWAY</h3>
+                                                    <h5>Lead Designer at Behance</h5>
+                                                </div>
+                                            </div>
+                                            <div class="listview_1_of_2 images_1_of_2">
+                                                <div class="listimg listimg_2_of_1">
+                                                    <%= image_tag "client_img4.jpg" %>
+                                                </div>
+                                                <div class="text list_2_of_1">
+                                                    <p>“Phasellus non purus vel arcu tempor commodo. Fusce semper, purus vel luctus molestie, risus sem cursus neque.”</p>
+                                                    <h3>EMMA STONE</h3>
+                                                    <h5>Co-Founder of Shazam</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feedback" id="contact">
+                                <div class="wrap">
+                                    <h2>Get in Touch</h2>
+                                    <div class="line blue"><span> </span></div>
+                                    <h4>1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111</h4>
+                                    <form>
+                                        <div class="text-box">
+                                            <label>
+                                                <input type="text" class="textbox" value="Your Name:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Name:';}">
+                                            </label>
+                                            <label>
+                                                <input type="text" class="textbox" value="Your Email:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Email:';}">
+                                            </label>
+                                            <div class="clear"></div>
+                                        </div>
+                                        <textarea value="Your Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Message:';}">Message</textarea>
+                                        <input type="submit" value="Send Message">
+                                    </form>
+                                    
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
