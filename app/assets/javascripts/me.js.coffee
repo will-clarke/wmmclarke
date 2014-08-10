@@ -30,3 +30,15 @@ jQuery ->
   
   # Run the show!
   filterList.init()
+
+  # $container.isotope({ filter: '.code' })
+  # $('#filter .code')  
+
+  # $('#container').isotope({
+  #   // options...
+  #   itemSelector: '.item',
+  #   masonry: {
+  #     columnWidth: 200
+  #   }
+  # });
+

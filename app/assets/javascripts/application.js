@@ -13,4 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require jquery.isotope.min
+//= require custom
+//= require modernizr.custom
 //= require_tree .
