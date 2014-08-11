@@ -50,7 +50,8 @@ img{max-width:100%;}
 	z-index:9;
 	width: 100%;
 	clear: both;
-	background:#87509c;
+    background:#DF5A49;
+	/*background:#87509c;*/
 	position:fixed;
 	top:0;
  }
@@ -74,19 +75,19 @@ img{max-width:100%;}
 	 padding:5px 20px;
 	 color:#EEE;
 	 border-radius:3px;
-	 -webkit-border-radius:3px;
-	 -moz-border-radius:3px;
-	 -o-border-radius:3px;
-	 -webkit-transition: all 0.3s ease;
-	  -moz-transition: all 0.3s ease;
-	  -o-transition: all 0.3s ease;
-      transition: all 0.3s ease;
+	 -webkit-border-radius:5px;
+	 -moz-border-radius:5px;
+	 -o-border-radius:5px;
+	 -webkit-transition: all 0.45s ease;
+	  -moz-transition: all 0.45s ease;
+	  -o-transition: all 0.45s ease;
+      transition: all 0.45s ease;
  }
  .menu li a:hover ,.menu li.active a{
-	 background:#643a79;
+	 background: darken(#DF5A49, 15%);
  } 
  #nav .current a {
-	 background:#643a79;
+	 background:darken(#DF5A49, 15%);
 }
 .toggleMenu {
     display:  none;
@@ -231,7 +232,8 @@ img{max-width:100%;}
 }
 /****** Services ********/
 .services{
-	background:#17c2a4;
+    background:#E27A3F;
+	/*background:#17c2a4;*/
 	padding:5em 0;
 }
 .services h4{
@@ -321,7 +323,8 @@ img{max-width:100%;}
 }
 /********* Team *********/
 .team{
-	background:#e7f1f8;
+    background:#EFC94C;
+	/*background:#e7f1f8;*/
 	padding:5em 0;
 }
 .team h4{
@@ -411,7 +414,7 @@ img{max-width:100%;}
 }
 /******* Skills *********/
 .Skills{
-	background:#ffffff;
+	background:#45B29D;
 	padding:5em 0;
 }
 .Skills h4{
@@ -425,7 +428,7 @@ img{max-width:100%;}
 }
 /****** Portfolio ********/
 .portfolio-grid{
-	background:#ffdd99;
+	background:#DF5A49;
 	padding:5em 0;
 }
 .portfolio-grid h4{
@@ -549,7 +552,7 @@ img{max-width:100%;}
 }
 /******** About ********/
 .about{
-	background:#d74680;
+	background:#E27A3F;
 	padding:5em 0;
 }
 .about h4{
@@ -613,7 +616,7 @@ img{max-width:100%;}
 }
  /******** get in touch ********/
 .feedback{
-	background:#3c5499;
+	background:#EFC94C;
 	padding:5em 0;
 	text-align:center;
 }
