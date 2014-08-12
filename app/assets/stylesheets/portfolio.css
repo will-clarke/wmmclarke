@@ -388,13 +388,30 @@
 
 .cs-style-5 figure img {
     z-index: 10;
-    -webkit-transition: -webkit-transform 0.4s;
-    -moz-transition: -moz-transform 0.4s;
-    transition: transform 0.4s;
+    -webkit-transition: -webkit-transform 0.55s;
+    -moz-transition: -moz-transform 0.55s;
+    transition: transform 0.55s;
 }
 
 .no-touch .cs-style-5 figure:hover img,
 .cs-style-5 figure.cs-hover img {
+    -webkit-transform: scale(0.1);
+    -moz-transform: scale(0.1);
+    -ms-transform: scale(0.1);
+    transform: scale(0.1);
+}
+
+
+.no-touch .cs-style-5 figure:focus img,
+.cs-style-5 figure.cs-focus img {
+    -webkit-transform: scale(0.1);
+    -moz-transform: scale(0.1);
+    -ms-transform: scale(0.1);
+    transform: scale(0.1);
+}
+
+.no-touch .cs-style-5 figure:active img,
+.cs-style-5 figure.cs-active img {
     -webkit-transform: scale(0.1);
     -moz-transform: scale(0.1);
     -ms-transform: scale(0.1);
