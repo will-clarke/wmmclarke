@@ -178,6 +178,10 @@
 /* =========================================================
 **************************Portfolio*************************
 ============================================================ */
+
+
+
+
 .typo1 {
     position:relative; 
     width:100%; 
@@ -308,7 +312,7 @@
     -moz-transition: 0.5s all;
     -o-transition: 0.5s all;
 }
-#nivo-lightbox-demo a {
+.nivo-lightbox-demo a {
     padding: 5px 10px;
     border: 2px solid #ffffff;
     border-radius: 2em;
@@ -336,15 +340,17 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: #37bdb5;
+    /*background: #37bdb5;*/
+    /*background: #45B29D;*/
     color: #fff;
 }
 
 .grid figcaption h3 {
-    margin: 20px 0 5px;
+    margin: 20px 0 7px;
     padding: 0;
     color: #fff;
-    font-size:16px;
+    font-size:20px;
+    font-weight: bold;
     line-height:18px;
 }
 .grid figcaption h3 a {
@@ -389,10 +395,10 @@
 
 .no-touch .cs-style-5 figure:hover img,
 .cs-style-5 figure.cs-hover img {
-    -webkit-transform: scale(0.4);
-    -moz-transform: scale(0.4);
-    -ms-transform: scale(0.4);
-    transform: scale(0.4);
+    -webkit-transform: scale(0.1);
+    -moz-transform: scale(0.1);
+    -ms-transform: scale(0.1);
+    transform: scale(0.1);
 }
 
 .cs-style-5 figcaption {
