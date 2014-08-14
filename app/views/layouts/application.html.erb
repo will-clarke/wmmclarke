@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title> WMMC </title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600,700' rel='stylesheet' type='text/css'>
-
-</head>
-<body>
-
-<%= yield %>
-
-</body>
-</html>
+    <head>
+        <title> WMMC </title>
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+        <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+        <%= csrf_meta_tags %>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600,700' rel='stylesheet' type='text/css'>
+            <script>
+            $(function(){
+                $().timelinr({
+                orientation:    'vertical',
+                issuesSpeed:    300,
+                datesSpeed:     100,
+                arrowKeys:      'true',
+                startAt:        3
+                })
+            });
+            </script>
+        </head>
+        <body>
+            <%= yield %>
+        </body>
+    </html>
