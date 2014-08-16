@@ -224,19 +224,20 @@ img{max-width:100%;}
  	letter-spacing:5px;
  	-webkit-text-stroke-width:2px;
 }
-.team h2,.Skills h2{
-  color:#3c4761;	
-}
-.portfolio-grid h2{
-	color:#393939;
-}
+// .team h2,.Skills h2{
+//   color:#3c4761;	
+// }
+// .portfolio-grid h2{
+// 	color:#393939;
+// }
 /****** Services ********/
 .services{
     background:#E27A3F;
 	/*background:#17c2a4;*/
 	padding:5em 0;
 }
-.services h4{
+// .services h4{
+h4 {
 	color:#FFF;
 	font-size:1.2em;
 	text-align:center;
@@ -417,15 +418,15 @@ img{max-width:100%;}
 	background:#45B29D;
 	padding:5em 0;
 }
-.Skills h4{
-	color:#3c4761;
-	font-size:1.2em;
-	text-align:center;
-	font-weight:600;
-	width:50%;
-	margin:0 auto;	
-	padding-top: 1em;
-}
+// .Skills h4{
+// 	color:#3c4761;
+// 	font-size:1.2em;
+// 	text-align:center;
+// 	font-weight:600;
+// 	width:50%;
+// 	margin:0 auto;	
+// 	padding-top: 1em;
+// }
 /****** Portfolio ********/
 #container {
     margin: 0 auto 20px;
@@ -727,6 +728,30 @@ img{max-width:100%;}
 	color:#FFF;
 	text-decoration:underline;
 }
+
+
+
+/* ================================================================== */
+
+/* i. Map
+
+/* ================================================================== */
+
+#map {
+   display: block;
+    height: 486px;
+   width: 100%;
+   background-color: #F6F4EF;
+}
+#map img { max-width:inherit !important; }
+#map .map-error {
+  text-align: center;
+  padding-top: 48px;
+  color: #C0B491;
+  font-size: 14px;
+}
+
+
 /**************** Media Quries ************************/
 @media only screen and (max-width: 1366px){
 	.wrap{

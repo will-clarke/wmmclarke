@@ -19,12 +19,16 @@ text-decoration: none;
 -ms-transition: 0.5s;
 transition: 0.5s;
 }
-a:hover,
+#timeline a:hover,
 #timeline a.selected {
 color: #ffcc00;
 }
 
-#timeline h1,h2,h4,h5,h6 {
+#timeline h1,
+#timeline h2,
+#timeline h4,
+#timeline h5,
+#timeline h6 {
 text-align: center;
 color: #ccc;
 text-shadow: #000 1px 1px 2px;
@@ -122,7 +126,7 @@ line-height: 22px;
 text-shadow: #000 1px 1px 2px;
 }
 
-#grad_top,
+#timeline #grad_top,
 #timeline #grad_bottom {
 width: 500px;
 height: 80px;
@@ -137,7 +141,7 @@ bottom: 0;
 background: url('timeline/grad_bottom.png') repeat-x;
 }
 
-#next,
+#timeline #next,
 #timeline #prev {
 position: absolute;
 left: 55%;
@@ -149,7 +153,7 @@ background-repeat: no-repeat;
 text-indent: -9999px;
 overflow: hidden;
 }
-#next:hover,
+#timeline #next:hover,
 #timeline #prev:hover {
 background-position:  0 0;
 }
@@ -161,7 +165,7 @@ background-image: url('timeline/next_v.png');
 top: 0;
 background-image: url('timeline/prev_v.png');
 }
-#next.disabled,
+#timeline #next.disabled,
 #timeline #prev.disabled {
 opacity: 0.2;
 }

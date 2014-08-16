@@ -413,9 +413,9 @@
                                                 <h1>2011</h1>
                                                 <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
                                             </li>
-                                        </ul>
-                                        <div id="grad_top"></div>
-                                        <div id="grad_bottom"></div>
+                                        </ul>   
+                                        <div id="grad_top" style="background: linear-gradient(to bottom, #EFC94C, rgba(0, 0, 0, 0));"></div>
+                                        <div id="grad_bottom" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0),  #EFC94C);"></div>
                                         <a href="#" id="next">+</a>
                                         <a href="#" id="prev">-</a>
                                     </div>
@@ -497,15 +497,15 @@
                                             <div class="section group">
                                                 <div class="grid_1_of_4 team_1_of_4">
                                                     <div class="circle" id="circles-1"></div>
-                                                    <h3>Web Design</h3>
+                                                    <h3>Ruby</h3>
                                                 </div>
                                                 <div class="grid_1_of_4 team_1_of_4">
                                                     <div class="circle" id="circles-2"></div>
-                                                    <h3>Html / Css</h3>
+                                                    <h3>Rails</h3>
                                                 </div>
                                                 <div class="grid_1_of_4 team_1_of_4">
                                                     <div class="circle" id="circles-3"></div>
-                                                    <h3>Graphic Design</h3>
+                                                    <h3>Web Development</h3>
                                                 </div>
                                                 <div class="grid_1_of_4 team_1_of_4">
                                                     <div class="circle" id="circles-4"></div>
@@ -570,79 +570,87 @@
                             </div>
                             <div class="about" id="about">
                                 <div class="wrap">
-                                    <h2>What People say about us</h2>
-                                    <div class="line rose"><span> </span></div>
-                                    <h4>Our clients love us!</h4>
-                                    <div class="testimonials">
-                                        <div class="section group">
-                                            <div class="listview_1_of_2 images_1_of_2">
-                                                <div class="listimg listimg_2_of_1">
-                                                    <%= image_tag "client_img1.jpg" %>
+                                    <section id="map">
+                                        <p class="map-error">Something went wrong... Unable to load map... Please try to enable javascript</p>
+                                        </section> <!-- Map Section End-->
+                                        
+                                        
+                                        <!-- <h2>What People say about us</h2>
+                                        <div class="line rose"><span> </span></div>
+                                        <h4>Our clients love us!</h4>
+                                        <div class="testimonials">
+                                            <div class="section group">
+                                                <div class="listview_1_of_2 images_1_of_2">
+                                                    <div class="listimg listimg_2_of_1">
+                                                        <%= image_tag "client_img1.jpg" %>
+                                                    </div>
+                                                    <div class="text list_2_of_1">
+                                                        <p>“Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.”</p>
+                                                        <h3>Chanel Iman</h3>
+                                                        <h5>CEO of pinterest</h5>
+                                                    </div>
                                                 </div>
-                                                <div class="text list_2_of_1">
-                                                    <p>“Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.”</p>
-                                                    <h3>Chanel Iman</h3>
-                                                    <h5>CEO of pinterest</h5>
-                                                </div>
-                                            </div>
-                                            <div class="listview_1_of_2 images_1_of_2">
-                                                <div class="listimg listimg_2_of_1">
-                                                    <%= image_tag "client_img2.jpg" %>
-                                                </div>
-                                                <div class="text list_2_of_1">
-                                                    <p>“Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.”</p>
-                                                    <h3>ADRIANA LIMA</h3>
-                                                    <h5>Founder of Instagram</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="testimonials2">
-                                        <div class="section group">
-                                            <div class="listview_1_of_2 images_1_of_2">
-                                                <div class="listimg listimg_2_of_1">
-                                                    <%= image_tag "client_img3.jpg" %>
-                                                </div>
-                                                <div class="text list_2_of_1">
-                                                    <p>“Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.”</p>
-                                                    <h3>ANNE HATHAWAY</h3>
-                                                    <h5>Lead Designer at Behance</h5>
-                                                </div>
-                                            </div>
-                                            <div class="listview_1_of_2 images_1_of_2">
-                                                <div class="listimg listimg_2_of_1">
-                                                    <%= image_tag "client_img4.jpg" %>
-                                                </div>
-                                                <div class="text list_2_of_1">
-                                                    <p>“Phasellus non purus vel arcu tempor commodo. Fusce semper, purus vel luctus molestie, risus sem cursus neque.”</p>
-                                                    <h3>EMMA STONE</h3>
-                                                    <h5>Co-Founder of Shazam</h5>
+                                                <div class="listview_1_of_2 images_1_of_2">
+                                                    <div class="listimg listimg_2_of_1">
+                                                        <%= image_tag "client_img2.jpg" %>
+                                                    </div>
+                                                    <div class="text list_2_of_1">
+                                                        <p>“Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.”</p>
+                                                        <h3>ADRIANA LIMA</h3>
+                                                        <h5>Founder of Instagram</h5>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="testimonials2">
+                                            <div class="section group">
+                                                <div class="listview_1_of_2 images_1_of_2">
+                                                    <div class="listimg listimg_2_of_1">
+                                                        <%= image_tag "client_img3.jpg" %>
+                                                    </div>
+                                                    <div class="text list_2_of_1">
+                                                        <p>“Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.”</p>
+                                                        <h3>ANNE HATHAWAY</h3>
+                                                        <h5>Lead Designer at Behance</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="listview_1_of_2 images_1_of_2">
+                                                    <div class="listimg listimg_2_of_1">
+                                                        <%= image_tag "client_img4.jpg" %>
+                                                    </div>
+                                                    <div class="text list_2_of_1">
+                                                        <p>“Phasellus non purus vel arcu tempor commodo. Fusce semper, purus vel luctus molestie, risus sem cursus neque.”</p>
+                                                        <h3>EMMA STONE</h3>
+                                                        <h5>Co-Founder of Shazam</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> -->
                                     </div>
                                 </div>
-                            </div>
-                            <div class="feedback" id="contact">
-                                <div class="wrap">
-                                    <h2>Get in Touch</h2>
-                                    <div class="line blue"><span> </span></div>
-                                    <h4>1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111</h4>
-                                    <form>
-                                        <div class="text-box">
-                                            <label>
-                                                <input type="text" class="textbox" value="Your Name:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Name:';}">
-                                            </label>
-                                            <label>
-                                                <input type="text" class="textbox" value="Your Email:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Email:';}">
-                                            </label>
-                                            <div class="clear"></div>
-                                        </div>
-                                        <textarea value="Your Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Message:';}">Message</textarea>
-                                        <input type="submit" value="Send Message">
-                                    </form>
-                                    
+                                <!-- Map Section
+                                ================================================== -->
+                                
+                                <div class="feedback" id="contact">
+                                    <div class="wrap">
+                                        <h2>Get in Touch</h2>
+                                        <div class="line blue"><span> </span></div>
+                                        <h4>1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111</h4>
+                                        <form>
+                                            <div class="text-box">
+                                                <label>
+                                                    <input type="text" class="textbox" value="Your Name:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Name:';}">
+                                                </label>
+                                                <label>
+                                                    <input type="text" class="textbox" value="Your Email:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Email:';}">
+                                                </label>
+                                                <div class="clear"></div>
+                                            </div>
+                                            <textarea value="Your Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Message:';}">Message</textarea>
+                                            <input type="submit" value="Send Message">
+                                        </form>
+                                        
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
