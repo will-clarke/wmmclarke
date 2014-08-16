@@ -13,3 +13,13 @@ rgb(226, 122, 63)
 rgb(239, 201, 76)
 rgb(69, 178, 157)
 rgb(51, 77, 92)
+
+
+intro
+services
+skills
+interesting-stuff
+timeline
+portfolio
+about
+contact

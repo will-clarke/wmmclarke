@@ -1,6 +1,44 @@
-// Place all the styles related to the me controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+$red: #DF5A49;
+$orange: #E27A3F;
+$yellow: #EFC94C;
+$green: #45B29D;
+$dark-green: #334D5C;
+
+
+
+
+#intro {
+    background-color: $red;
+}
+
+#services {
+    background-color: $orange;
+}
+
+#skills {
+    background-color: $yellow;
+}
+
+#interesting-stuff {
+    background-color: $green;
+}
+
+#timeline {
+    background-color: $red;
+}
+
+#portfolio {
+    background-color: $green;
+}
+
+#about {
+    background-color: $orange;
+}
+
+#contact {
+    background-color: $yellow;
+}
+
 
 .element {
     position: absolute; 
@@ -8,15 +46,29 @@
     top: 0px;
 }
 
-// #container {
-//     // margin: auto;
-//     margin: 0 auto
-// }
-
 figure {
     height: 100%;
 }
 
-#portfolio {
-    background-color: #45B29D;  
-}
+
+// rgb(223, 90, 73)
+// rgb(226, 122, 63)
+// rgb(239, 201, 76)
+// rgb(69, 178, 157)
+// rgb(51, 77, 92)
+
+
+// intro
+// services
+// skills
+// interesting-stuff
+// timeline
+// portfolio
+// about
+// contact
+
+
+// r
+// g
+// o
+// (dg)

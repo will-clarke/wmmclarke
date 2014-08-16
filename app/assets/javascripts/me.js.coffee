@@ -10,7 +10,9 @@ jQuery ->
 
   circlesCreated = false
 
-  $('#skills').mouseenter ->
+  $('#skills').bind 'mouseenter click', ->
+  # if $('#skills:in-viewport(100)')
+    # circles_ = -> 
     if circlesCreated == false
       colors = [ [ "#dfe8ed", "#30bae7" ], [ "#dfe8ed", "#d74680" ], [ "#dfe8ed", "#15c7a8" ], [ "#dfe8ed", "#eb7d4b" ] ]
       percentages = [90, 40, 20, 35]
@@ -23,7 +25,7 @@ jQuery ->
           percentage: percentages[i - 1]
           radius: 80
           width: 15
-          duration: 1800
+          duration: 1300
           number: percentages[i - 1]
           text: "%"
           colors: colors[i - 1]
