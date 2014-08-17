@@ -165,3 +165,37 @@ h1,h2,h4,h5,h6 {
                 #prev.disabled {
                     opacity: 0.2;
                 }
+
+
+
+
+@media all and (max-width:800px){
+  #issues li p {
+
+  }
+}
+
+ @media all and (max-width:640px){
+    #issues li p {
+    margin: 0;
+ }
+}
+
+ @media all and (max-width:480px){
+   #issues li p {
+    margin: 0;
+   }
+   #dates .selected {
+    font-size: 1.2em;
+   }
+}
+
+@media all and (max-width:320px){
+    #issues li p {
+    margin: 0;
+    font-size: 0.8em;
+    }
+    #dates .selected {
+    font-size: 1em;
+   }
+}
