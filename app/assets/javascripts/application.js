@@ -18,4 +18,7 @@
 //= require jquery.fancybox
 //= require modernizr.custom
 //= require responsive-nav
+//= require jquery.scrollmagic
+//= require circles
+//= require me
 //= require_tree .

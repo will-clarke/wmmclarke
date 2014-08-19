@@ -32,6 +32,57 @@ jQuery ->
         i++
         circlesCreated = true
 
-  $('#william')
+  # init controller
+  controller = new ScrollMagic()
+  
+  # sceneOptions = z{duration: 200, offset: -100}
+  # build tween
+  tween = TweenMax.to("#animate", 0.5,
+    scale: 8
+    # ease: Back.easeOut, 
+    # rotation:36, 
+    # textDecoration: "underline", 
+    # color: "red"
+  )
+  
+  # build scene
+  new ScrollScene(
+    triggerElement: "#william"
+    duration: 200
+    offset: 250
+  ).setTween(tween).addTo controller
+  # new ScrollScene(
+  #   triggerElement: "#icons"
+  #   offset: 500
+  # ).addTo(controller).triggerHook("onEnter").setTween TweenMax.from("#icons", 0.5,
+  #   scale: 0
+  #   ease: Elastic.easeOut
+  #   delay: 0.5
+  # )
+
+
+  $().timelinr
+    orientation: "vertical"
+    issuesSpeed: 300
+    datesSpeed: 100
+    arrowKeys: "true"
+    startAt: 3
+
+  $(".rotate").textrotator()
+
+  isbig = true
+  $('#skills').mouseover ->
+    $('#william').css('scale: 0.125')
+    # animation: "spin" # You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
+    # speed: 3500
+    
+  bindEvent = (e, eventName, callback) ->
+  if e.addEventListener # new browsers
+    e.addEventListener eventName, callback, false
+  # IE
+  else e.attachEvent "on" + eventName, callback  if e.attachEvent
+bindEvent document.body, "scroll", (e) ->
+  document.body.scrollLeft = 0
+
   # $(".nav-collapse").responsiveNav
 

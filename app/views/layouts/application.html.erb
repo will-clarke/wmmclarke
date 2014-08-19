@@ -8,20 +8,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600,700' rel='stylesheet' type='text/css'>
-            <script>
-            $(function(){
-                $().timelinr({
-                orientation:    'vertical',
-                issuesSpeed:    300,
-                datesSpeed:     100,
-                arrowKeys:      'true',
-                startAt:        3
-                })
-            });
 
-            </script>
         </head>
-        <body>
+        <body style="overflow-x:hidden; position: absolute; width: 100%; overflow-y: scroll;"> 
             <%= yield %>
         </body>
     </html>

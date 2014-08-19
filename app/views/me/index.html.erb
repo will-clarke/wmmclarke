@@ -1,32 +1,19 @@
-<script>
-    var controller;
-    $(document).ready(function($) {
-        // init controller
-        controller = new ScrollMagic();
-// sceneOptions = z{duration: 200, offset: -100}
-// build tween
-var tween = TweenMax.to("#animate", 0.5, {scale: 8, 
-    // ease: Back.easeOut, 
-    // rotation:36, 
-    // textDecoration: "underline", 
-    color: "red"});
-// build scene
-new ScrollScene({triggerElement: "#william", duration: 200, offset: 300})
-    .setTween(tween)
-    .addTo(controller);
+<script type="text/javascript">
 
-new ScrollScene({       triggerElement: "#icons",
-                        offset: 500
-                    })
-                    .addTo(controller)
-                    .triggerHook("onEnter")
-                    .setTween(TweenMax.from("#icons", 0.5, {scale: 0, ease: Elastic.easeOut, delay: 0.5}));
+function bindEvent(e, eventName, callback) {
+    if(e.addEventListener) // new browsers
+        e.addEventListener(eventName, callback, false);
+    else if(e.attachEvent) // IE
+        e.attachEvent('on'+ eventName, callback);
+};
 
-
-// show indicators (requires debug extension)
+bindEvent(document.body, 'scroll', function(e) {
+    document.body.scrollLeft = 0;
 });
 
 </script>
+
+
 <div class="header" id="home">  
     <div class="header_top">
         <div class="wrap">
@@ -59,8 +46,8 @@ new ScrollScene({       triggerElement: "#icons",
 <!--                <div id="trigger"></div> -->
             <div id="william" style="text-align:center;">
                 <p>
-                <div id="animate" style="text-align:center; max-width:800px; overflow:hidden; z-index:100;
-position: absolute;
+                <div id="animate" style="text-align:center; max-width:800px; overflow:hidden;
+position: absolute; width:800px;
                 ">
                     <p style="text-align:center;">William Clarke</p>
                     <!-- <p style="overflow:hidden; display:inline-block; border:2px solid black; text-align:center">William Clarke</p> -->
@@ -71,7 +58,7 @@ position: absolute;
    </div>   
             </div>
             <p id="trigger" style="height:12em; bottom:0; position:relative; text-align:center;">
-                <span style="position:absolute; bottom:0; text-align:center;" > Hola. This is my egotistical site.
+                <span style="position:absolute; bottom:0; text-align:center;" > Hola. This is my <span class="rotate">wonderful, inspiring, groovy, egotistical, funky</span> site.
                 </span>
 
                 </p>
