@@ -91,7 +91,8 @@ img{max-width:100%;}
 }
 .toggleMenu {
     display:  none;
-    background:#643A79;
+    // background:#643A79;
+    background: darken(#df5a49, 15%);
     padding:4px 5px 0px 5px;
     border-radius:2em; 
     -webkit-border-radius:2em;
@@ -99,7 +100,9 @@ img{max-width:100%;}
     -o-border-radius:2em; 
 }
 .toggleMenu:hover{
-	background:#5D2F74;
+	// background:#5D2F74;
+    background: darken(#df5a49, 20%);
+
 }
 .nav:before,
 .nav:after {

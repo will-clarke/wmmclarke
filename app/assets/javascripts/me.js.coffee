@@ -1,6 +1,5 @@
 jQuery ->
 
-    
   $("#nav").onePageNav
     begin: ->
       console.log "start"
@@ -32,3 +31,6 @@ jQuery ->
           
         i++
         circlesCreated = true
+
+  # $(".nav-collapse").responsiveNav
+
