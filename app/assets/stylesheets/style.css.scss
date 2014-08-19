@@ -755,6 +755,20 @@ h4 {
 }
 
 
+.social-icons {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.social-icons-row {
+    display: block;
+}
+
+.social-icons:hover{
+    // color:red;
+}
+
 /**************** Media Quries ************************/
 @media only screen and (max-width: 1366px){
 	.wrap{

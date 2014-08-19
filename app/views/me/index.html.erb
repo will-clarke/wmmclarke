@@ -32,472 +32,484 @@
         </div>
     </div>
 </div>
-
 <div class="main">
     <!-- <div class="content"> -->
-        
-        <div class="services" id="services">
-            <div class="wrap">
-                <h2>Services we Provide</h2>
-                <div class="line green"><span> </span></div>
-                <h4>We are working with both individuals and businesses from all over the globe to create awesome websites and applications.</h4>
-                <div class="services_grids">
+    
+    <div class="services" id="services">
+        <div class="wrap">
+            <h2>Services we Provide</h2>
+            <div class="line green"><span> </span></div>
+            <h4>We are working with both individuals and businesses from all over the globe to create awesome websites and applications.</h4>
+            <div class="services_grids">
+                <div class="section group">
+                    <div class="grid_1_of_4 services_1_of_4">
+                        <%= image_tag "flag.png" %>
+                        <h3>Branding</h3>
+                        <p>Lorem ipsum <%= fa_stacked_icon "terminal 4x inverse", base: "circle 4x", class: "pull-right", text: "Hi!"
+                        %> dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+                    </div>
+                    <div class="grid_1_of_4 services_1_of_4">
+                        <%= image_tag "design.png" %>
+                        <h3>Design</h3>
+                        <p>Sed ut perspiciatis unde <%=  fa_icon "quote-left 4x"  %>  iste natus error sit voluptatem </p>
+                    </div>
+                    <div class="grid_1_of_4 services_1_of_4">
+                        <%= image_tag "development.png" %>
+                        <h3>Development</h3>
+                        <p>At vero <%= fa_icon "camera-retro inverse" %> eos et accusamus et iusto odio dignissimos qui blanditiis praesentium.</p>
+                    </div>
+                    <div class="grid_1_of_4 services_1_of_4">
+                        <%= image_tag "rocket.png" %>
+                        <h3>Rocket science</h3>
+                        <p>Et harum quidem   <i class="fa fa-4x fa-github"></i>
+                        rerum est et expedita distinctio. Nam libero <%= fa_stacked_icon "twitter", base: "circle-o"
+                        %> tempore.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="Skills" id="skills">
+        <div class="wrap">
+            <h2>WE GOT SKILLS!</h2>
+            <div class="line skyblue"><span> </span></div>
+            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
+            <div class="services_grids">
+                <div id="canvas">
                     <div class="section group">
-                        <div class="grid_1_of_4 services_1_of_4">
-                            <%= image_tag "flag.png" %>
-                            <h3>Branding</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+                        <div class="grid_1_of_4 timeline_1_of_4">
+                            <div class="circle" id="circles-1"></div>
+                            <h3>Ruby</h3>
                         </div>
-                        <div class="grid_1_of_4 services_1_of_4">
-                            <%= image_tag "design.png" %>
-                            <h3>Design</h3>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
+                        <div class="grid_1_of_4 timeline_1_of_4">
+                            <div class="circle" id="circles-2"></div>
+                            <h3>Rails</h3>
                         </div>
-                        <div class="grid_1_of_4 services_1_of_4">
-                            <%= image_tag "development.png" %>
-                            <h3>Development</h3>
-                            <p>At vero eos et accusamus et iusto odio dignissimos qui blanditiis praesentium.</p>
+                        <div class="grid_1_of_4 timeline_1_of_4">
+                            <div class="circle" id="circles-3"></div>
+                            <h3>Web Development</h3>
                         </div>
-                        <div class="grid_1_of_4 services_1_of_4">
-                            <%= image_tag "rocket.png" %>
-                            <h3>Rocket science</h3>
-                            <p>Et harum quidem rerum est et expedita distinctio. Nam libero tempore.</p>
+                        <div class="grid_1_of_4 timeline_1_of_4">
+                            <div class="circle" id="circles-4"></div>
+                            <h3>Ui / Ux</h3>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <div class="Skills" id="skills">
-            <div class="wrap">
-                <h2>WE GOT SKILLS!</h2>
-                <div class="line skyblue"><span> </span></div>
-                <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
-                <div class="services_grids">
-                    <div id="canvas">
-                        <div class="section group">
-                            <div class="grid_1_of_4 timeline_1_of_4">
-                                <div class="circle" id="circles-1"></div>
-                                <h3>Ruby</h3>
-                            </div>
-                            <div class="grid_1_of_4 timeline_1_of_4">
-                                <div class="circle" id="circles-2"></div>
-                                <h3>Rails</h3>
-                            </div>
-                            <div class="grid_1_of_4 timeline_1_of_4">
-                                <div class="circle" id="circles-3"></div>
-                                <h3>Web Development</h3>
-                            </div>
-                            <div class="grid_1_of_4 timeline_1_of_4">
-                                <div class="circle" id="circles-4"></div>
-                                <h3>Ui / Ux</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="interesting-stuff" id="interesting-stuff">
-            <div class="typo1">
-                <div class="wrapper interesting-stuff">
-                    <div class="section-title">
-                        <h3 class="heading">Interesting Stuff</h3>
-                        <h6> </h6>
-                        
-                        <div id="options" class="interesting-stuff">
-                            <ul id="filters" class="option-set interesting-stuff" data-option-key="filter">
-                                <li><a href="#filter" data-option-value=".code">Code Stuff</a></li>
-                                <li><a href="#filter" data-option-value=".normal">Normal Stuff</a></li>
-                                <li><a href="#filter" id="everything" data-option-value=".code, .normal">Everything</a></li>
-                            </ul>
-                            <!-- <li><a href="#filter" id="random" >Random</a></li> -->
-                            <!--                                     <li><a href="#filter" data-option-value=".ios-app">Prototype</a></li>
-                            <li><a href="#filter" data-option-value=".graphic">Photography</a></li> -->
-                        </div>
-                        
-                        
-                        <ul id="container" class="clickable cs-style-5 grid interesting-stuff isotope" >
-                            <li class="element code isotope-item" data-number="1" >
-                                <figure>
-                                    <%= image_tag 'stuff/ruby.png' %>
-                                    <figcaption>
-                                    <h3>Ruby</h3>
-                                    <div class="meta-box interesting-stuff">
-                                        <span class="entry-categories">Ruby's a super elegant language.</span>
-                                    </div>
-                                    <footer>
-                                        <div class="nivo-lightbox-demo"> <p> <a href="https://www.ruby-lang.org/en/" target="_blank" data-lightbox-gallery="gallery1" class="nivo-lightbox-demo"> Link </a> </p></div>
-                                    </footer>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                            <li class="element code isotope-item" data-number="2" >
-                                <figure>
-                                    <%= image_tag 'stuff/jquery.png' %>
-                                    <figcaption>
-                                    <h3>jQuery</h3>
-                                    <div class="meta-box interesting-stuff">
-                                        <span class="entry-categories">Lets you do javascript stuff really easily. 10/10.</span>
-                                    </div>
-                                    <footer>
-                                        <div class="nivo-lightbox-demo"> <p> <a href="http://jquery.com/" target="_blank" data-lightbox-gallery="gallery1" class="nivo-lightbox-demo"> Link </a> </p></div>
-                                    </footer>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                            <li class="element normal isotope-item" data-number="3" >
-                                <figure>
-                                    <%= image_tag 'stuff/axolotl.png' %>
-                                    <figcaption>
-                                    <h3>Axolotls</h3>
-                                    <div class="meta-box interesting-stuff">
-                                        <span class="entry-categories">A neotenic salamander. Need I say more?</span>
-                                    </div>
-                                    <footer>
-                                        <div class="nivo-lightbox-demo"> <p> <a href="http://en.wikipedia.org/wiki/Axolotl" target="_blank" data-lightbox-gallery="gallery1" class="nivo-lightbox-demo"> Link </a> </p></div>
-                                    </footer>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                            <li class="element code isotope-item" data-number="4" >
-                                <figure>
-                                    <%= image_tag 'stuff/rails.png' %>
-                                    <figcaption>
-                                    <h3>Rails</h3>
-                                    <div class="meta-box interesting-stuff">
-                                        <span class="entry-categories">Websites with Ruby. Clever magic in the background</span>
-                                    </div>
-                                    <footer>
-                                        <div class="nivo-lightbox-demo"> <p> <a href="http://rubyonrails.org/" target="_blank" data-lightbox-gallery="gallery1" class="nivo-lightbox-demo"> Link </a> </p></div>
-                                    </footer>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                            <li class="element normal isotope-item" data-number="5" >
-                                <figure>
-                                    <%= image_tag 'stuff/bonsai.png' %>
-                                    <figcaption>
-                                    <h3>Bonsai Trees</h3>
-                                    <div class="meta-box interesting-stuff">
-                                        <span class="entry-categories">Mini trees from Japan.</span>
-                                    </div>
-                                    <footer>
-                                        <div class="nivo-lightbox-demo"> <p> <a href="http://en.wikipedia.org/wiki/Bonsai" target="_blank" data-lightbox-gallery="gallery1" class="nivo-lightbox-demo"> Link </a> </p></div>
-                                    </footer>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                            <li class="element normal isotope-item" data-number="6" >
-                                <figure>
-                                    <%#= image_tag 'stuff/wasp.jpg' %>
-                                    <%= image_tag 'stuff/bees.png' %>
-                                    <figcaption>
-                                    <h3>Social Insects</h3>
-                                    <div class="meta-box interesting-stuff">
-                                        <span class="entry-categories">Superorganisms are super</span>
-                                    </div>
-                                    <footer>
-                                        <div class="nivo-lightbox-demo"> <p> <a href="http://en.wikipedia.org/wiki/Eusociality#In_insects" target="_blank" data-lightbox-gallery="gallery1" class="nivo-lightbox-demo"> Link </a> </p></div>
-                                    </footer>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                            <li class="element normal isotope-item" data-number="7" >
-                                <figure>
-                                    <%= image_tag 'stuff/bike2.png' %>
-                                    <figcaption>
-                                    <h3>Cycling</h3>
-                                    <div class="meta-box interesting-stuff">
-                                        <span class="entry-categories">Free transport & Exercise!</span>
-                                    </div>
-                                    <footer>
-                                        <div class="nivo-lightbox-demo"> <p> <a href="https://www.youtube.com/watch?v=QH2-TGUlwu4" target="_blank" data-lightbox-gallery="gallery1" class="nivo-lightbox-demo"> Link </a> </p></div>
-                                    </footer>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                            <li class="element normal isotope-item" data-number="8" >
-                                <figure>
-                                    <%= image_tag 'stuff/skull.png' %>
-                                    <figcaption>
-                                    <h3>Anthropology</h3>
-                                    <div class="meta-box interesting-stuff">
-                                        <span class="entry-categories">People are interesting.</span>
-                                    </div>
-                                    <footer>
-                                        <div class="nivo-lightbox-demo"> <p> <a href="http://en.wikipedia.org/wiki/Anthropology" target="_blank" data-lightbox-gallery="gallery1" class="nivo-lightbox-demo"> Link </a> </p></div>
-                                    </footer>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                            <li class="element code isotope-item" data-number="9" >
-                                <figure>
-                                    <%= image_tag 'stuff/analytics.png' %>
-                                    <figcaption>
-                                    <h3>Analytics / Adwords</h3>
-                                    <div class="meta-box interesting-stuff">
-                                        <span class="entry-categories">Demographic & Behavioural patterns of the Internet.</span>
-                                    </div>
-                                    <footer>
-                                        <div class="nivo-lightbox-demo"> <p> <a href="http://www.google.com/analytics/" target="_blank" data-lightbox-gallery="gallery1" class="nivo-lightbox-demo"> Link </a> </p></div>
-                                    </footer>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                            <li class="element code isotope-item" data-number="10" >
-                                <figure>
-                                    <%= image_tag 'stuff/javascript.png' %>
-                                    <figcaption>
-                                    <h3>Javascript</h3>
-                                    <div class="meta-box interesting-stuff">
-                                        <span class="entry-categories">Make websites interactive!</span>
-                                    </div>
-                                    <footer>
-                                        <div class="nivo-lightbox-demo"> <p> <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank" data-lightbox-gallery="gallery1" class="nivo-lightbox-demo"> Link </a> </p></div>
-                                    </footer>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                            <li class="element normal isotope-item" data-number="11" >
-                                <figure>
-                                    <%= image_tag 'stuff/go.png' %>
-                                    <figcaption>
-                                    <h3>Go</h3>
-                                    <div class="meta-box interesting-stuff">
-                                        <span class="entry-categories">A perfectly balanced game of attack & defence.</span>
-                                    </div>
-                                    <footer>
-                                        <div class="nivo-lightbox-demo"> <p> <a href="http://en.wikipedia.org/wiki/Go_(game)" target="_blank" data-lightbox-gallery="gallery1" class="nivo-lightbox-demo"> Link </a> </p></div>
-                                    </footer>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                            <li class="element code isotope-item" data-number="12" >
-                                <figure>
-                                    <%= image_tag 'stuff/transparentHadoop.png' %>
-                                    <figcaption>
-                                    <h3>Hadoop / Hive / SQL</h3>
-                                    <div class="meta-box interesting-stuff">
-                                        <span class="entry-categories">Big data. Far out, man.</span>
-                                    </div>
-                                    <footer>
-                                        <div class="nivo-lightbox-demo"> <p> <a href="http://en.wikipedia.org/wiki/Apache_Hive" target="_blank" data-lightbox-gallery="gallery1" class="nivo-lightbox-demo"> Link </a> </p></div>
-                                    </footer>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                            <li class="element normal isotope-item" data-number="13" >
-                                <figure>
-                                    <%= image_tag 'stuff/pangolin.png' %>
-                                    <figcaption>
-                                    <h3>Pangolins</h3>
-                                    <div class="meta-box interesting-stuff">
-                                        <span class="entry-categories">Type 'baby pangolin' into Google.</span>
-                                    </div>
-                                    <footer>
-                                        <div class="nivo-lightbox-demo"> <p> <a href="https://www.google.co.uk/search?q=baby+pangolin&tbm=isch" target="_blank" data-lightbox-gallery="gallery1" class="nivo-lightbox-demo"> Link </a> </p></div>
-                                    </footer>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                            <li class="element normal isotope-item" data-number="14" >
-                                <figure>
-                                    <%= image_tag 'stuff/taj.png' %>
-                                    <figcaption>
-                                    <h3>Travelling</h3>
-                                    <div class="meta-box interesting-stuff">
-                                        <span class="entry-categories">We should all travel more.</span>
-                                    </div>
-                                    <footer>
-                                        <div class="nivo-lightbox-demo"> <p> <a href="http://www.theguardian.com/travel" target="_blank" data-lightbox-gallery="gallery1" class="nivo-lightbox-demo"> Link </a> </p></div>
-                                    </footer>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                            <li class="element code isotope-item" data-number="15" >
-                                <figure>
-                                    <%= image_tag 'stuff/tech.png' %>
-                                    <figcaption>
-                                    <h3>Tech Companies</h3>
-                                    <div class="meta-box interesting-stuff">
-                                        <span class="entry-categories">Technology's pretty amazing.</span>
-                                    </div>
-                                    <footer>
-                                        <div class="nivo-lightbox-demo"> <p> <a href="http://www.theguardian.com/technology" target="_blank" data-lightbox-gallery="gallery1" class="nivo-lightbox-demo"> Link </a> </p></div>
-                                    </footer>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                            <li class="element code isotope-item" data-number="16" >
-                                <figure>
-                                    <%= image_tag 'stuff/github.png' %>
-                                    <figcaption>
-                                    <h3>Github</h3>
-                                    <div class="meta-box interesting-stuff">
-                                        <span class="entry-categories">Place to put Code</span>
-                                    </div>
-                                    <footer>
-                                        <div class="nivo-lightbox-demo"> <p> <a href="https://github.com/wmmc" target="_blank" data-lightbox-gallery="gallery1" class="nivo-lightbox-demo"> Link </a> </p></div>
-                                    </footer>
-                                    </figcaption>
-                                </figure>
-                            </li>
+    </div>
+    <div class="interesting-stuff" id="interesting-stuff">
+        <div class="typo1">
+            <div class="wrapper interesting-stuff">
+                <div class="section-title">
+                    <h3 class="heading">Interesting Stuff</h3>
+                    <h6> </h6>
+                    
+                    <div id="options" class="interesting-stuff">
+                        <ul id="filters" class="option-set interesting-stuff" data-option-key="filter">
+                            <li><a href="#filter" data-option-value=".code">Code Stuff</a></li>
+                            <li><a href="#filter" data-option-value=".normal">Normal Stuff</a></li>
+                            <li><a href="#filter" id="everything" data-option-value=".code, .normal">Everything</a></li>
                         </ul>
-                        <div class="clear"> </div>
+                        <!-- <li><a href="#filter" id="random" >Random</a></li> -->
+                        <!--                                     <li><a href="#filter" data-option-value=".ios-app">Prototype</a></li>
+                        <li><a href="#filter" data-option-value=".graphic">Photography</a></li> -->
+                    </div>
+                    
+                    
+                    <ul id="container" class="clickable cs-style-5 grid interesting-stuff isotope" >
+                        <li class="element code isotope-item" data-number="1" >
+                            <figure>
+                                <%= image_tag 'stuff/ruby.png' %>
+                                <figcaption>
+                                <h3>Ruby</h3>
+                                <div class="meta-box interesting-stuff">
+                                    <span class="entry-categories">Ruby's a super elegant language.</span>
+                                </div>
+                                <footer>
+                                    <div class="nivo-lightbox-demo"> <p> <a href="https://www.ruby-lang.org/en/" target="_blank" data-lightbox-gallery="gallery1" class="nivo-lightbox-demo"> Link </a> </p></div>
+                                </footer>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="element code isotope-item" data-number="2" >
+                            <figure>
+                                <%= image_tag 'stuff/jquery.png' %>
+                                <figcaption>
+                                <h3>jQuery</h3>
+                                <div class="meta-box interesting-stuff">
+                                    <span class="entry-categories">Lets you do javascript stuff really easily. 10/10.</span>
+                                </div>
+                                <footer>
+                                    <div class="nivo-lightbox-demo"> <p> <a href="http://jquery.com/" target="_blank" data-lightbox-gallery="gallery1" class="nivo-lightbox-demo"> Link </a> </p></div>
+                                </footer>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="element normal isotope-item" data-number="3" >
+                            <figure>
+                                <%= image_tag 'stuff/axolotl.png' %>
+                                <figcaption>
+                                <h3>Axolotls</h3>
+                                <div class="meta-box interesting-stuff">
+                                    <span class="entry-categories">A neotenic salamander. Need I say more?</span>
+                                </div>
+                                <footer>
+                                    <div class="nivo-lightbox-demo"> <p> <a href="http://en.wikipedia.org/wiki/Axolotl" target="_blank" data-lightbox-gallery="gallery1" class="nivo-lightbox-demo"> Link </a> </p></div>
+                                </footer>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="element code isotope-item" data-number="4" >
+                            <figure>
+                                <%= image_tag 'stuff/rails.png' %>
+                                <figcaption>
+                                <h3>Rails</h3>
+                                <div class="meta-box interesting-stuff">
+                                    <span class="entry-categories">Websites with Ruby. Clever magic in the background</span>
+                                </div>
+                                <footer>
+                                    <div class="nivo-lightbox-demo"> <p> <a href="http://rubyonrails.org/" target="_blank" data-lightbox-gallery="gallery1" class="nivo-lightbox-demo"> Link </a> </p></div>
+                                </footer>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="element normal isotope-item" data-number="5" >
+                            <figure>
+                                <%= image_tag 'stuff/bonsai.png' %>
+                                <figcaption>
+                                <h3>Bonsai Trees</h3>
+                                <div class="meta-box interesting-stuff">
+                                    <span class="entry-categories">Mini trees from Japan.</span>
+                                </div>
+                                <footer>
+                                    <div class="nivo-lightbox-demo"> <p> <a href="http://en.wikipedia.org/wiki/Bonsai" target="_blank" data-lightbox-gallery="gallery1" class="nivo-lightbox-demo"> Link </a> </p></div>
+                                </footer>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="element normal isotope-item" data-number="6" >
+                            <figure>
+                                <%#= image_tag 'stuff/wasp.jpg' %>
+                                <%= image_tag 'stuff/bees.png' %>
+                                <figcaption>
+                                <h3>Social Insects</h3>
+                                <div class="meta-box interesting-stuff">
+                                    <span class="entry-categories">Superorganisms are super</span>
+                                </div>
+                                <footer>
+                                    <div class="nivo-lightbox-demo"> <p> <a href="http://en.wikipedia.org/wiki/Eusociality#In_insects" target="_blank" data-lightbox-gallery="gallery1" class="nivo-lightbox-demo"> Link </a> </p></div>
+                                </footer>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="element normal isotope-item" data-number="7" >
+                            <figure>
+                                <%= image_tag 'stuff/bike2.png' %>
+                                <figcaption>
+                                <h3>Cycling</h3>
+                                <div class="meta-box interesting-stuff">
+                                    <span class="entry-categories">Free transport & Exercise!</span>
+                                </div>
+                                <footer>
+                                    <div class="nivo-lightbox-demo"> <p> <a href="https://www.youtube.com/watch?v=QH2-TGUlwu4" target="_blank" data-lightbox-gallery="gallery1" class="nivo-lightbox-demo"> Link </a> </p></div>
+                                </footer>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="element normal isotope-item" data-number="8" >
+                            <figure>
+                                <%= image_tag 'stuff/skull.png' %>
+                                <figcaption>
+                                <h3>Anthropology</h3>
+                                <div class="meta-box interesting-stuff">
+                                    <span class="entry-categories">People are interesting.</span>
+                                </div>
+                                <footer>
+                                    <div class="nivo-lightbox-demo"> <p> <a href="http://en.wikipedia.org/wiki/Anthropology" target="_blank" data-lightbox-gallery="gallery1" class="nivo-lightbox-demo"> Link </a> </p></div>
+                                </footer>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="element code isotope-item" data-number="9" >
+                            <figure>
+                                <%= image_tag 'stuff/analytics.png' %>
+                                <figcaption>
+                                <h3>Analytics / Adwords</h3>
+                                <div class="meta-box interesting-stuff">
+                                    <span class="entry-categories">Demographic & Behavioural patterns of the Internet.</span>
+                                </div>
+                                <footer>
+                                    <div class="nivo-lightbox-demo"> <p> <a href="http://www.google.com/analytics/" target="_blank" data-lightbox-gallery="gallery1" class="nivo-lightbox-demo"> Link </a> </p></div>
+                                </footer>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="element code isotope-item" data-number="10" >
+                            <figure>
+                                <%= image_tag 'stuff/javascript.png' %>
+                                <figcaption>
+                                <h3>Javascript</h3>
+                                <div class="meta-box interesting-stuff">
+                                    <span class="entry-categories">Make websites interactive!</span>
+                                </div>
+                                <footer>
+                                    <div class="nivo-lightbox-demo"> <p> <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank" data-lightbox-gallery="gallery1" class="nivo-lightbox-demo"> Link </a> </p></div>
+                                </footer>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="element normal isotope-item" data-number="11" >
+                            <figure>
+                                <%= image_tag 'stuff/go.png' %>
+                                <figcaption>
+                                <h3>Go</h3>
+                                <div class="meta-box interesting-stuff">
+                                    <span class="entry-categories">A perfectly balanced game of attack & defence.</span>
+                                </div>
+                                <footer>
+                                    <div class="nivo-lightbox-demo"> <p> <a href="http://en.wikipedia.org/wiki/Go_(game)" target="_blank" data-lightbox-gallery="gallery1" class="nivo-lightbox-demo"> Link </a> </p></div>
+                                </footer>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="element code isotope-item" data-number="12" >
+                            <figure>
+                                <%= image_tag 'stuff/transparentHadoop.png' %>
+                                <figcaption>
+                                <h3>Hadoop / Hive / SQL</h3>
+                                <div class="meta-box interesting-stuff">
+                                    <span class="entry-categories">Big data. Far out, man.</span>
+                                </div>
+                                <footer>
+                                    <div class="nivo-lightbox-demo"> <p> <a href="http://en.wikipedia.org/wiki/Apache_Hive" target="_blank" data-lightbox-gallery="gallery1" class="nivo-lightbox-demo"> Link </a> </p></div>
+                                </footer>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="element normal isotope-item" data-number="13" >
+                            <figure>
+                                <%= image_tag 'stuff/pangolin.png' %>
+                                <figcaption>
+                                <h3>Pangolins</h3>
+                                <div class="meta-box interesting-stuff">
+                                    <span class="entry-categories">Type 'baby pangolin' into Google.</span>
+                                </div>
+                                <footer>
+                                    <div class="nivo-lightbox-demo"> <p> <a href="https://www.google.co.uk/search?q=baby+pangolin&tbm=isch" target="_blank" data-lightbox-gallery="gallery1" class="nivo-lightbox-demo"> Link </a> </p></div>
+                                </footer>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="element normal isotope-item" data-number="14" >
+                            <figure>
+                                <%= image_tag 'stuff/taj.png' %>
+                                <figcaption>
+                                <h3>Travelling</h3>
+                                <div class="meta-box interesting-stuff">
+                                    <span class="entry-categories">We should all travel more.</span>
+                                </div>
+                                <footer>
+                                    <div class="nivo-lightbox-demo"> <p> <a href="http://www.theguardian.com/travel" target="_blank" data-lightbox-gallery="gallery1" class="nivo-lightbox-demo"> Link </a> </p></div>
+                                </footer>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="element code isotope-item" data-number="15" >
+                            <figure>
+                                <%= image_tag 'stuff/tech.png' %>
+                                <figcaption>
+                                <h3>Tech Companies</h3>
+                                <div class="meta-box interesting-stuff">
+                                    <span class="entry-categories">Technology's pretty amazing.</span>
+                                </div>
+                                <footer>
+                                    <div class="nivo-lightbox-demo"> <p> <a href="http://www.theguardian.com/technology" target="_blank" data-lightbox-gallery="gallery1" class="nivo-lightbox-demo"> Link </a> </p></div>
+                                </footer>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="element code isotope-item" data-number="16" >
+                            <figure>
+                                <%= image_tag 'stuff/github.png' %>
+                                <figcaption>
+                                <h3>Github</h3>
+                                <div class="meta-box interesting-stuff">
+                                    <span class="entry-categories">Place to put Code</span>
+                                </div>
+                                <footer>
+                                    <div class="nivo-lightbox-demo"> <p> <a href="https://github.com/wmmc" target="_blank" data-lightbox-gallery="gallery1" class="nivo-lightbox-demo"> Link </a> </p></div>
+                                </footer>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                    <div class="clear"> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="timeline_" id="timeline_">
+        <div class="wrap">
+            <div id="timeline">
+                <ul id="dates">
+                    <li><a href="#1900" class="selected">1900</a></li>
+                    <li><a href="#1930">1930</a></li>
+                    <li><a href="#1944">1944</a></li>
+                    <li><a href="#1950">1950</a></li>
+                    <li><a href="#1971">1971</a></li>
+                    <li><a href="#1977">1977</a></li>
+                    <li><a href="#1989">1989</a></li>
+                    <li><a href="#1999">1999</a></li>
+                    <li><a href="#2001">2001</a></li>
+                    <li><a href="#2011">2011</a></li>
+                </ul>
+                <ul id="issues">
+                    <li id="1900" class="selected">
+                        <!-- <img src="1.png" width="256" height="256" /> -->
+                        <%= image_tag '1.png' %>
+                        <h1>1900</h1>
+                        <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+                    </li>
+                    <li id="1930">
+                        <%= image_tag '1.png' %>
+                        <h1>1930</h1>
+                        <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+                    </li>
+                    <li id="1944">
+                        <%= image_tag '2.png' %>
+                        <h1>1944</h1>
+                        <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+                    </li>
+                    <li id="1950">
+                        <%= image_tag '3.png' %>
+                        <h1>1950</h1>
+                        <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+                    </li>
+                    <li id="1971">
+                        <%= image_tag '4.png' %>
+                        <h1>1971</h1>
+                        <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+                    </li>
+                    <li id="1977">
+                        <%= image_tag '5.png' %>
+                        <h1>1977</h1>
+                        <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+                    </li>
+                    <li id="1989">
+                        <%= image_tag '6.png' %>
+                        <h1>1989</h1>
+                        <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+                    </li>
+                    <li id="1999">
+                        <%= image_tag '7.png' %>
+                        <h1>1999</h1>
+                        <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+                    </li>
+                    <li id="2001">
+                        <%= image_tag '8.png' %>
+                        <h1>2001</h1>
+                        <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+                    </li>
+                    <li id="2011">
+                        <%= image_tag '9.png' %>
+                        <h1>2011</h1>
+                        <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+                    </li>
+                </ul>
+                <div id="grad_top" style="background: linear-gradient(to bottom, #EFC94C, rgba(0, 0, 0, 0));"></div>
+                <div id="grad_bottom" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0),  #EFC94C);"></div>
+                <a href="#" id="next">+</a>
+                <a href="#" id="prev">-</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="projects" id="projects">
+        <div class="wrap">
+            <h2>Our projects</h2>
+            <div class="line yellow"><span> </span></div>
+            <h4>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur, adipisci velit, sed quia non numquam</h4>
+            
+            <div class="container">
+                <ul id="filters" class="interesting-stuff">
+                    <li><span class="filter active" data-filter="web apps icons">All</span></li>
+                    <li><span class="filter" data-filter="web">Web</span></li>
+                    <li><span class="filter" data-filter="apps">Apps</span></li>
+                    <li><span class="filter" data-filter="icons">Icons</span></li>
+                </ul>
+                <div id="projectslist">
+                    <div class="projects web icons" data-cat="web">
+                        <div class="projects-wrapper">
+                            <a href="#">
+                                <%= image_tag "projects_img1.png" %>
+                                <h5>Isometric Perspective Mock-Up</h5>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="projects apps" data-cat="apps">
+                        <div class="projects-wrapper">
+                            <a href="#">
+                                <%= image_tag "projects_img2.png" %>
+                                <h5>Isometric Perspective Mock-Up</h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="projects icons web" data-cat="web">
+                        <div class="projects-wrapper">
+                            <a href="#">
+                                <%= image_tag "projects_img3.png" %>
+                                <h5>Isometric Perspective Mock-Up</h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="projects icons" data-cat="icons">
+                        <div class="projects-wrapper">
+                            <a href="#">
+                                <%= image_tag "projects_img4.png" %>
+                                <h5>Isometric Perspective Mock-Up</h5>
+                            </a>
+                        </div>
                     </div>
                 </div>
+                <div class="button green-button"><a href="#">Load more Projects</a></div>
             </div>
         </div>
-        
-
-        <div class="timeline_" id="timeline_">
-            <div class="wrap">
-                <div id="timeline">
-                    <ul id="dates">
-                        <li><a href="#1900" class="selected">1900</a></li>
-                        <li><a href="#1930">1930</a></li>
-                        <li><a href="#1944">1944</a></li>
-                        <li><a href="#1950">1950</a></li>
-                        <li><a href="#1971">1971</a></li>
-                        <li><a href="#1977">1977</a></li>
-                        <li><a href="#1989">1989</a></li>
-                        <li><a href="#1999">1999</a></li>
-                        <li><a href="#2001">2001</a></li>
-                        <li><a href="#2011">2011</a></li>
-                    </ul>
-                    <ul id="issues">
-                        <li id="1900" class="selected">
-                            <!-- <img src="1.png" width="256" height="256" /> -->
-                            <%= image_tag '1.png' %>
-                            <h1>1900</h1>
-                            <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
-                        </li>
-                        <li id="1930">
-                            <%= image_tag '1.png' %>
-                            <h1>1930</h1>
-                            <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
-                        </li>
-                        <li id="1944">
-                            <%= image_tag '2.png' %>
-                            <h1>1944</h1>
-                            <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
-                        </li>
-                        <li id="1950">
-                            <%= image_tag '3.png' %>
-                            <h1>1950</h1>
-                            <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
-                        </li>
-                        <li id="1971">
-                            <%= image_tag '4.png' %>
-                            <h1>1971</h1>
-                            <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
-                        </li>
-                        <li id="1977">
-                            <%= image_tag '5.png' %>
-                            <h1>1977</h1>
-                            <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
-                        </li>
-                        <li id="1989">
-                            <%= image_tag '6.png' %>
-                            <h1>1989</h1>
-                            <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
-                        </li>
-                        <li id="1999">
-                            <%= image_tag '7.png' %>
-                            <h1>1999</h1>
-                            <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
-                        </li>
-                        <li id="2001">
-                            <%= image_tag '8.png' %>
-                            <h1>2001</h1>
-                            <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
-                        </li>
-                        <li id="2011">
-                            <%= image_tag '9.png' %>
-                            <h1>2011</h1>
-                            <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
-                        </li>
-                    </ul>
-
-                    <div id="grad_top" style="background: linear-gradient(to bottom, #EFC94C, rgba(0, 0, 0, 0));"></div>
-                    <div id="grad_bottom" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0),  #EFC94C);"></div>
-                    <a href="#" id="next">+</a>
-                    <a href="#" id="prev">-</a>
-
-
-                </div>
-
-            </div>
+    </div>
+    <div class="about" id="about">
+        <div class="wrap">
+            <section class="map" id="map">
+                <p class="map-error">Something went wrong... Unable to load map... Please try to enable javascript</p>
+            </section>
         </div>
-
-        
-        <div class="projects" id="projects">
-            <div class="wrap">
-                <h2>Our projects</h2>
-                <div class="line yellow"><span> </span></div>
-                <h4>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur, adipisci velit, sed quia non numquam</h4>
-                
-                <div class="container">
-                    <ul id="filters" class="interesting-stuff">
-                        <li><span class="filter active" data-filter="web apps icons">All</span></li>
-                        <li><span class="filter" data-filter="web">Web</span></li>
-                        <li><span class="filter" data-filter="apps">Apps</span></li>
-                        <li><span class="filter" data-filter="icons">Icons</span></li>
-                    </ul>
-                    <div id="projectslist">
-                        <div class="projects web icons" data-cat="web">
-                            <div class="projects-wrapper">
-                                <a href="#">
-                                    <%= image_tag "projects_img1.png" %>
-                                    <h5>Isometric Perspective Mock-Up</h5>
-                                </a>
-                            </div>
-                        </div>
-                        
-                        <div class="projects apps" data-cat="apps">
-                            <div class="projects-wrapper">
-                                <a href="#">
-                                    <%= image_tag "projects_img2.png" %>
-                                    <h5>Isometric Perspective Mock-Up</h5>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="projects icons web" data-cat="web">
-                            <div class="projects-wrapper">
-                                <a href="#">
-                                    <%= image_tag "projects_img3.png" %>
-                                    <h5>Isometric Perspective Mock-Up</h5>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="projects icons" data-cat="icons">
-                            <div class="projects-wrapper">
-                                <a href="#">
-                                    <%= image_tag "projects_img4.png" %>
-                                    <h5>Isometric Perspective Mock-Up</h5>
-                                </a>
-                            </div>
-                        </div>
+    </div>
+    
+    <div class="contact" id="contact">
+        <div class="wrap">
+            <h2>Get in Touch</h2>
+            <div class="line blue"><span> </span></div>
+            <h4>
+            <div class="social-icons-row">
+                <div class="social-icons">
+                    <div class="social-icons">
+                        <i class="fa fa-github-square fa-4x faa-tada animated-hover"></i>
                     </div>
-                    <div class="button green-button"><a href="#">Load more Projects</a></div>
+                    <div class="social-icons">
+                        <i class="fa fa-facebook-square fa-4x faa-vertical animated-hover"></i>
+                    </div>
+                    <div class="social-icons">
+                        <i class="fa fa-twitter-square fa-4x faa-spin animated-hover"></i>
+                    </div>
+                    <div class="social-icons">
+                        <a href="mailto:wmmclarke@gmail.com?subject=Feedback From Your Website">
+                            <i class="fa fa-envelope-square fa-4x faa-shake animated-hover"></i>
+                        </a>
+                    </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="about" id="about">
-            <div class="wrap">
-                <section class="map" id="map">
-                    <p class="map-error">Something went wrong... Unable to load map... Please try to enable javascript</p>
-                </section>
-            </div>
-        </div>
-        
-        <div class="contact" id="contact">
-            <div class="wrap">
-                <h2>Get in Touch</h2>
-                <div class="line blue"><span> </span></div>
-                <h4>1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111</h4>
+                </h4>
                 <form>
                     <div class="text-box">
                         <label>
@@ -514,23 +526,22 @@
                 
             </div>
         </div>
-    <!-- </div> -->
-</div>
-
-// <script>
-//  var nav = responsiveNav(".nav-collapse", { // Selector
-//   animate: true, // Boolean: Use CSS3 transitions, true or false
-//   // transition: 500s, // Integer: Speed of the transition, in milliseconds
-//   // label: "Menu", // String: Label for the navigation toggle
-//   // insert: "before", // String: Insert the toggle before or after the navigation
-//   // customToggle: "", // Selector: Specify the ID of a custom toggle
-//   closeOnNavClick: true, // Boolean: Close the navigation when one of the links are clicked
-//   // openPos: "relative", // String: Position of the opened nav, relative or static
-//   // navClass: "nav-collapse", // String: Default CSS class. If changed, you need to edit the CSS too!
-//   // navActiveClass: "js-nav-active", // String: Class that is added to  element when nav is active
-//   // jsClass: "js", // String: 'JS enabled' class which is added to  element
-//   // init: function(){}, // Function: Init callback
-//   // open: function(){}, // Function: Open callback
-//   // close: function(){} // Function: Close callback
-// });
-// </script>
+        <!-- </div> -->
+    </div>
+    // <script>
+    //  var nav = responsiveNav(".nav-collapse", { // Selector
+    //   animate: true, // Boolean: Use CSS3 transitions, true or false
+    //   // transition: 500s, // Integer: Speed of the transition, in milliseconds
+    //   // label: "Menu", // String: Label for the navigation toggle
+    //   // insert: "before", // String: Insert the toggle before or after the navigation
+    //   // customToggle: "", // Selector: Specify the ID of a custom toggle
+    //   closeOnNavClick: true, // Boolean: Close the navigation when one of the links are clicked
+    //   // openPos: "relative", // String: Position of the opened nav, relative or static
+    //   // navClass: "nav-collapse", // String: Default CSS class. If changed, you need to edit the CSS too!
+    //   // navActiveClass: "js-nav-active", // String: Class that is added to  element when nav is active
+    //   // jsClass: "js", // String: 'JS enabled' class which is added to  element
+    //   // init: function(){}, // Function: Init callback
+    //   // open: function(){}, // Function: Open callback
+    //   // close: function(){} // Function: Close callback
+    // });
+    // </script>
