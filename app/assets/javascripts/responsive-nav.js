@@ -1,51 +1,85 @@
 var ww;
+
+
+
+
 $(document).ready(function() {
-var ww = document.body.clientWidth;
- $(".nav li a").each(function() {
-   if ($(this).next().length > 0) {
-     $(this).addClass("parent");
-   };
- })
- 
- $(".toggleMenu").click(function(e) {
-   e.preventDefault();
-   $(this).toggleClass("active");
-   $(".nav").toggle();
- });
- adjustMenu();
+
+  var adjustMenu = function() {
+    if (ww < 800) {
+        $(".toggleMenu").css("display", "inline-block");
+        if (!$(".toggleMenu").hasClass("active")) {
+            $(".nav").hide();
+        } else {
+            $(".nav").show();
+        }
+        $(".nav li").unbind('mouseenter mouseleave');
+        $(".nav li a.parent").unbind('click').bind('click', function(e) {
+            // must be attached to anchor element to prevent bubbling
+            e.preventDefault();
+            // $(this).parent("li").toggleClass("hover");
+            $(".nav").hide();
+        });
+    } else if (ww >= 800) {
+        $(".toggleMenu").css("display", "none");
+        $(".nav").show();
+        $(".nav li").removeClass("hover");
+        $(".nav li a").unbind('click');
+        $(".nav li").unbind('mouseenter mouseleave').bind('mouseenter mouseleave', function() {
+            // must be attached to li so that mouseleave is not triggered when hover over submenu
+            $(this).toggleClass('hover');
+        });
+    }
+}
+
+// add call to adjustMenu now?
+
+    var ww = document.body.clientWidth;
+    $(".nav li a").each(function() {
+        if ($(this).next().length > 0) {
+            $(this).addClass("parent");
+        };
+    })
+
+    $(".toggleMenu").click(function(e) {
+        e.preventDefault();
+        $(this).toggleClass("active");
+        $(".nav").toggle();
+    });
+    adjustMenu();
 })
 
 $(window).bind('resize orientationchange', function() {
- ww = document.body.clientWidth;
- adjustMenu();
+    ww = document.body.clientWidth;
+    adjustMenu();
 });
 
-var adjustMenu = function() {
- if (ww < 800) {
-   $(".toggleMenu").css("display", "inline-block");
-   if (!$(".toggleMenu").hasClass("active")) {
-     $(".nav").hide();
-   } else {
-     $(".nav").show();
-   }
-   $(".nav li").unbind('mouseenter mouseleave');
-   $(".nav li a.parent").unbind('click').bind('click', function(e) {
-     // must be attached to anchor element to prevent bubbling
-     e.preventDefault();
-     $(this).parent("li").toggleClass("hover");
-   });
- } 
- else if (ww >= 800) {
-   $(".toggleMenu").css("display", "none");
-   $(".nav").show();
-   $(".nav li").removeClass("hover");
-   $(".nav li a").unbind('click');
-   $(".nav li").unbind('mouseenter mouseleave').bind('mouseenter mouseleave', function() {
-     // must be attached to li so that mouseleave is not triggered when hover over submenu
-     $(this).toggleClass('hover');
-   });
- }
-}
+// var adjustMenu = function() {
+//     if (ww < 800) {
+//         $(".toggleMenu").css("display", "inline-block");
+//         if (!$(".toggleMenu").hasClass("active")) {
+//             $(".nav").hide();
+//         } else {
+//             $(".nav").show();
+//         }
+//         $(".nav li").unbind('mouseenter mouseleave');
+//         $(".nav li a.parent").unbind('click').bind('click', function(e) {
+//             // must be attached to anchor element to prevent bubbling
+//             e.preventDefault();
+//             // $(this).parent("li").toggleClass("hover");
+//             $(".nav").hide();
+//         });
+//     } else if (ww >= 800) {
+//         $(".toggleMenu").css("display", "none");
+//         $(".nav").show();
+//         $(".nav li").removeClass("hover");
+//         $(".nav li a").unbind('click');
+//         $(".nav li").unbind('mouseenter mouseleave').bind('mouseenter mouseleave', function() {
+//             // must be attached to li so that mouseleave is not triggered when hover over submenu
+//             $(this).toggleClass('hover');
+//         });
+//     }
+// }
 
 
 
@@ -64,7 +98,7 @@ var adjustMenu = function() {
 //   var responsiveNav = function (el, options) {
 
 //     var computed = !!window.getComputedStyle;
-    
+
 //     // getComputedStyle polyfill
 //     if (!computed) {
 //       window.getComputedStyle = function(el) {
@@ -114,7 +148,7 @@ var adjustMenu = function() {
 //           }
 //         }
 //       },
-    
+
 //       removeEvent = function (el, evt, fn, bubble) {
 //         if ("removeEventListener" in el) {
 //           try {
@@ -138,7 +172,7 @@ var adjustMenu = function() {
 //           }
 //         }
 //       },
-    
+
 //       getChildren = function (e) {
 //         if (e.children.length < 1) {
 //           throw new Error("The Nav container has no containing elements");
@@ -153,25 +187,25 @@ var adjustMenu = function() {
 //         }
 //         return children;
 //       },
-    
+
 //       setAttributes = function (el, attrs) {
 //         for (var key in attrs) {
 //           el.setAttribute(key, attrs[key]);
 //         }
 //       },
-    
+
 //       addClass = function (el, cls) {
 //         if (el.className.indexOf(cls) !== 0) {
 //           el.className += " " + cls;
 //           el.className = el.className.replace(/(^\s*)|(\s*$)/g,"");
 //         }
 //       },
-    
+
 //       removeClass = function (el, cls) {
 //         var reg = new RegExp("(\\s|^)" + cls + "(\\s|$)");
 //         el.className = el.className.replace(reg, " ").replace(/(^\s*)|(\s*$)/g,"");
 //       },
-    
+
 //       // forEach method that passes back the stuff we need
 //       forEach = function (array, callback, scope) {
 //         for (var i = 0; i < array.length; i++) {
