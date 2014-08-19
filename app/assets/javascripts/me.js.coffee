@@ -32,5 +32,6 @@ jQuery ->
         i++
         circlesCreated = true
 
+  $('#william')
   # $(".nav-collapse").responsiveNav
 

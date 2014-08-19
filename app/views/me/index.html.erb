@@ -5,13 +5,13 @@
         controller = new ScrollMagic();
 // sceneOptions = z{duration: 200, offset: -100}
 // build tween
-var tween = TweenMax.to("#animate", 0.5, {scale: 1.5, 
+var tween = TweenMax.to("#animate", 0.5, {scale: 8, 
     // ease: Back.easeOut, 
     // rotation:36, 
     // textDecoration: "underline", 
     color: "red"});
 // build scene
-new ScrollScene({triggerElement: "#william", duration: 200, offset: 200})
+new ScrollScene({triggerElement: "#william", duration: 200, offset: 300})
     .setTween(tween)
     .addTo(controller);
 
@@ -57,17 +57,24 @@ new ScrollScene({       triggerElement: "#icons",
     <div class="intro" id="intro">
         <div class="wrap">
 <!--                <div id="trigger"></div> -->
-            <div id="william">
+            <div id="william" style="text-align:center;">
                 <p>
-                <div id="animate" style="text-align:center;">
-                    <p style="overflow:hidden; display:inline-block; border:2px solid black">William Clarke</p>
+                <div id="animate" style="text-align:center; max-width:800px; overflow:hidden; z-index:100;
+position: absolute;
+                ">
+                    <p style="text-align:center;">William Clarke</p>
+                    <!-- <p style="overflow:hidden; display:inline-block; border:2px solid black; text-align:center">William Clarke</p> -->
                 </div>
 </p>
 <div>
        
    </div>   
             </div>
-            <p id="trigger">Hola. This is my egotistical site.</p>
+            <p id="trigger" style="height:12em; bottom:0; position:relative; text-align:center;">
+                <span style="position:absolute; bottom:0; text-align:center;" > Hola. This is my egotistical site.
+                </span>
+
+                </p>
             <div id="icons">
                 <i class="fa fa-envelope-square fa-4x"></i>
                 <i class="fa fa-facebook-square fa-4x"></i>
@@ -395,9 +402,9 @@ new ScrollScene({       triggerElement: "#icons",
             </div>
         </div>
     </div>
-    
     <div class="timeline_" id="timeline_">
         <div class="wrap">
+    <h1>The most Interesting things about my life.</h1>
             <div id="timeline">
                 <ul id="dates">
                     <li><a href="#2014" class="selected">2014</a></li>
@@ -420,43 +427,75 @@ new ScrollScene({       triggerElement: "#icons",
                         <!-- <img src="1.png" width="256" height="256" /> -->
                         <%= image_tag '1.png' %>
                         <h1>2014</h1>
-                        <p>I worked at Forward3D for over 2 years as a PPC (data) analyst. Exciting stuff. Lots of Google ads. Automated lot of different processes using Ruby and Javascript (Google Scripts). Also learnt quite a lot about online marketing / advertising.</p>
+                        <h3>Forward3D: PPC Analyst</h3>
+                        
+                            <ul>
+                            <li>I worked at Forward3D for over 2 years as a PPC (data) analyst. </li>
+                            <li>Exciting stuff. Lots of Google ads. </li>
+                            <li>Automated lot of different processes using Ruby and Javascript (Google Scripts). </li>
+                            <li>Also learnt quite a lot about online marketing / advertising.</li>
+                        </ul>
+                   
                     </li>
                     <li id="2012">
                         <!-- <img src="1.png" width="256" height="256" /> -->
                         <%= image_tag '1.png' %>
                         <h1>2012</h1>
-                        <p>Masters: MSc in Evolutionary Anthropology. Pretty much viewing people from a biologist's perspective. Dissertation on Consumer Choice.</p>
+                        <h3>Evolutionary Anthropology.</h3>
+                        
+                            <ul>
+                            <li>Masters: MSc in Evolutionary Anthropology.</li>
+                            <li>Pretty much viewing people from a biologist's perspective.</li>
+                            <li>Dissertation on Consumer Choice.</li>
+                        </ul>  
+                   
                     </li>  
                     <li id="2011">
                         <!-- <img src="1.png" width="256" height="256" /> -->
                         <%= image_tag '1.png' %>
                         <h1>2011</h1>
-                        <p>BA Archaeology & Anthropology. Lots of old stuff. Best exam marks gained by writing about Ancient Aliens.</p>
+                        <h3>Archaology & Anthropology</h3>
+                        
+                            <ul>
+                                <li> BA Archaeology & Anthropology. </li>
+                                <li>Lots of old stuff.</li>
+                                <li>Best exam marks gained by writing about Ancient Aliens.</li>
+                            </ul>
+                           
                     </li>
-                      <li id="190">
-                        <!-- <img src="1.png" width="256" height="256" /> -->
-                        <%= image_tag '1.png' %>
-                        <h1>190</h1>
-                        <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
-                    </li>
+                    
                       <li id="2007">
                         <!-- <img src="1.png" width="256" height="256" /> -->
                         <%= image_tag '1.png' %>
                         <h1>2007</h1>
-                        <p>A levels. Ancient History, Biology & English literature, if you're interested. I'm a well rounded individual.</p>
+                        <h3>A levels</h3>
+                         <ul>
+                            <li>Ancient History, Biology & English literature, if you're interested.</li>
+                            <li>I'm a well rounded individual.</li>
+                        </ul>
                     </li>
                       <li id="1997">
                         <!-- <img src="1.png" width="256" height="256" /> -->
                         <%= image_tag '1.png' %>
                         <h1>1997</h1>
-                        <p>Royal Opera House - I stared (sort of) as Fleance in Verdi's Macbeth. Sadly my acting career went downhill from here.</p>
+                        <h3>Royal Opera House</h3>
+                        <ul>
+                            <li>Covent Garden - I stared (sort of) as Fleance in Verdi's Macbeth.</li>
+                            <li>Sadly my acting career went downhill from here.</li>
+                        </ul>
+
+                        
                     </li>
                       <li id="1988">
                         <!-- <img src="1.png" width="256" height="256" /> -->
                         <%= image_tag '1.png' %>
                         <h1>1988</h1>
-                        <p>I was born. A momentous occasion for all involved.</p>
+                        <h3>Born</h3>
+                        <ul>
+                            <li>I was born.</li>
+                            <li>A momentous occasion for all involved.</li>
+                        </ul>
+                        
                     </li>
                     <li id="193">
                         <%= image_tag '1.png' %>
