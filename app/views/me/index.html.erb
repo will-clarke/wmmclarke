@@ -1,4 +1,20 @@
-<div class="header" id="home">
+<script>
+    var controller;
+    $(document).ready(function($) {
+        // init controller
+        controller = new ScrollMagic();
+
+// build tween
+var tween = TweenMax.to("#animate", 0.1, {scale: 8});
+// build scene
+var scene = new ScrollScene({triggerElement: "#trigger1", duration: 1000})
+.setTween(tween)
+.addTo(controller);
+// show indicators (requires debug extension)
+});
+
+</script>
+<div class="header" id="home">  
     <div class="header_top">
         <div class="wrap">
             <div class="logo">
@@ -27,8 +43,22 @@
     </div>
     <div class="intro" id="intro">
         <div class="wrap">
-            <p>Hi there! We are the new kids on the block <br />and we build awesome websites and mobile apps.</p>
-            <div class="button"><a class="fancybox-media" href="http://vimeo.com/33790882">Watch the video</a></div>
+               <div id="trigger1"></div>
+
+            <div id="william">
+                <p>
+                <div id="animate">
+    <p style="font-weight:bold;">William Clarke</p>
+</div>
+</p>
+<div style="height:200px;">
+       
+   </div>   
+            </div>
+            <p>Hola. This is my egotistical site.</p>
+            <div id="icons">
+                <i class="fa fa-envelope-square fa-4x faa-shake animated-hover"></i>
+            </div>
         </div>
     </div>
 </div>

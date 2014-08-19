@@ -4,7 +4,9 @@ $yellow: #EFC94C;
 $green: #45B29D;
 $dark-green: #334D5C;
 
-
+.main { // should = timeline
+    background-color: $orange;
+}
 
 
 #intro {
@@ -23,16 +25,16 @@ $dark-green: #334D5C;
     background-color: $green;
 }
 
-#timeline {
+#timeline_ {
+    background-color: $orange;
+}
+
+#projects {
     background-color: $red;
 }
 
-#portfolio {
-    background-color: $green;
-}
-
 #about {
-    background-color: $orange;
+    background-color: $green;
 }
 
 #contact {
