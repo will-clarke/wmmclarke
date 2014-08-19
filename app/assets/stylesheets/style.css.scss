@@ -769,6 +769,10 @@ h4 {
     color: #fff;
 }
 
+  #william p {
+        font-size: 5em;
+    }
+
 /**************** Media Quries ************************/
 @media only screen and (max-width: 1366px){
 	.wrap{
@@ -817,6 +821,10 @@ h4 {
  	}
 }
  @media all and (max-width:640px){
+
+      #william p {
+        font-size: 5em;
+    }
  	.wrap{
  		width:95%;
  	}
@@ -835,6 +843,11 @@ h4 {
  	}
 }
  @media all and (max-width:480px){
+
+    #william p {
+        font-size: 3em;
+    }
+
  	.wrap{
  		width:95%;
  	}
@@ -874,6 +887,11 @@ h4 {
  	.list_2_of_1 p{
  		font-size:1em;
  		line-height:1.6em;
+
+    #william p {
+        font-size: 2em;
+    }
+
  	}
  	#filters li span{
  		font-size:1em;

@@ -14,7 +14,7 @@ jQuery ->
     # circles_ = -> 
     if circlesCreated == false
       colors = [ [ "#dfe8ed", "#30bae7" ], [ "#dfe8ed", "#d74680" ], [ "#dfe8ed", "#15c7a8" ], [ "#dfe8ed", "#eb7d4b" ] ]
-      percentages = [90, 40, 20, 35]
+      percentages = [90, 70, 70, 40]
       i = 1
 
       while i <= 4
