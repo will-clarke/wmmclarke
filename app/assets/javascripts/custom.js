@@ -251,11 +251,11 @@ $(function() {
 /* =========================================================
 **************************prettyPhoto***********************
 ==========================================================*/
-jQuery(window).load(function() {
-    jQuery("a[rel^='prettyPhoto']").prettyPhoto({
-        overlay_gallery: false,
-        "theme": 'light_rounded',
-        keyboard_shortcuts: true,
-        social_tools: false
-    });
-});
+// jQuery(window).load(function() {
+//     jQuery("a[rel^='prettyPhoto']").prettyPhoto({
+//         overlay_gallery: false,
+//         "theme": 'light_rounded',
+//         keyboard_shortcuts: true,
+//         social_tools: false
+//     });
+// });

@@ -21,5 +21,8 @@
 //= require responsive-nav
 //= require jquery.scrollmagic
 //= require circles
+//= require gmaps
+//= require _maps
+//= require nav
 //= require me
 //= require_tree .
