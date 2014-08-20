@@ -13,7 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require _maps
 //= require jquery.isotope.min
+//= require gmaps
 //= require custom
 //= require jquery.fancybox
 //= require jquery.simple-text-rotator
@@ -21,9 +23,6 @@
 //= require responsive-nav
 //= require jquery.scrollmagic
 //= require circles
-// = require _maps
-// = require gmaps
 //= require jquery.nav
 //= require me
-//= require init
 //= require_tree .

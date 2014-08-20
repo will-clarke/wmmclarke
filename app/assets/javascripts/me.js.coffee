@@ -89,6 +89,19 @@ jQuery ->
     # animation: "flip"
     # speed: 1250    
 
+  map = new GMaps(
+    el: "#map"
+    lat: 51.4988323
+    lng: -0.2356511
+    zoom: 13
+    zoomControl: true
+    zoomControlOpt:
+      style: "SMALL"
+      position: "TOP_LEFT"
+
+    panControl: false
+    scrollwheel: false
+  )
   # isbig = true
   # $('#skills').mouseover ->
   #   $('#william').css('scale: 0.125')
