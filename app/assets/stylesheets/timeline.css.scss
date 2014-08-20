@@ -36,9 +36,12 @@
 //    #timeline h2 {
 //         font-size: 14px;
 //     }
-
-
+$red: #DF5A49;
 $orange: #E27A3F;
+$yellow: #EFC94C;
+$green: #45B29D;
+$dark-green: #334D5C;
+
 
 
 #timeline_ .heading {
@@ -51,7 +54,7 @@ $orange: #E27A3F;
 
     #timeline {
         width: 500px;
-        height: 600px;
+        height: 35em;
         overflow: hidden;
         margin: 40px auto;
         position: relative;
@@ -122,7 +125,7 @@ $orange: #E27A3F;
                     text-align: center;
                     text-shadow: #000 1px 1px 2px;
                 }
-                #issues li p {
+                #issues li li {
                     font-size: 14px;
                     margin: 10px 20px;
                     font-weight: normal;
@@ -186,33 +189,33 @@ $orange: #E27A3F;
 
 
 
-// @media all and (max-width:800px){
-//   #issues li p {
+@media all and (max-width:800px){
+  #issues li p {
 
-//   }
-// }
+  }
+}
 
-//  @media all and (max-width:640px){
-//     #issues li p {
-//     margin: 0;
-//  }
-// }
+ @media all and (max-width:640px){
+    #issues li p {
+    margin: 0;
+ }
+}
 
-//  @media all and (max-width:480px){
-//    #issues li p {
-//     margin: 0;
-//    }
-//    #dates .selected {
-//     font-size: 1.2em;
-//    }
-// }
+ @media all and (max-width:480px){
+   #issues li p {
+    margin: 0;
+   }
+   #dates .selected {
+    font-size: 1.2em;
+   }
+}
 
-// @media all and (max-width:320px){
-//     #issues li p {
-//     margin: 0;
-//     font-size: 0.8em;
-//     }
-//     #dates .selected {
-//     font-size: 1em;
-//    }
-// }
+@media all and (max-width:320px){
+    #issues li p {
+    margin: 0;
+    font-size: 0.8em;
+    }
+    #dates .selected {
+    font-size: 1em;
+   }
+}
