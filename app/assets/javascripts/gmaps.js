@@ -5,6 +5,7 @@
  * Copyright 2013, Gustavo Leon
  * Released under the MIT License.
  */
+ // jQuery(document).ready(function() {
 
 if (!(typeof window.google === 'object' && window.google.maps)) {
   throw 'Google Maps API is required. Please register the following JavaScript library http://maps.google.com/maps/api/js?sensor=true.'
@@ -1980,3 +1981,4 @@ if (!Array.prototype.indexOf) {
       return -1;
   }
 }
+// });
