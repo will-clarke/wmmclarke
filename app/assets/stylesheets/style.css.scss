@@ -769,9 +769,23 @@ h4 {
     color: #fff;
 }
 
-  #william p {
-        font-size: 5em;
+
+#william {
+    padding-top: 8em;
+
+    div {
+        max-width:50em; 
+        overflow:hidden;
+        position: absolute; 
+        width:60em;
     }
+
+    p {
+        font-size: 5em;
+        text-align: center;
+    }
+}
+
 
 /**************** Media Quries ************************/
 @media only screen and (max-width: 1366px){
@@ -794,6 +808,13 @@ h4 {
  	} 
  }
  @media all and (max-width:800px){
+
+    #william {
+                padding-top: 1em;
+                text-align: left;
+        font-size: 0.8em;
+    }
+
  	.wrap{
  		width:95%;
  	}
@@ -823,8 +844,13 @@ h4 {
  @media all and (max-width:640px){
 
       #william p {
-        font-size: 5em;
+        padding-top: 1em;
+        text-align: left;
+
+
+        font-size: 0.6em;
     }
+
  	.wrap{
  		width:95%;
  	}
@@ -845,7 +871,10 @@ h4 {
  @media all and (max-width:480px){
 
     #william p {
-        font-size: 3em;
+        padding-top: 1em;
+        text-align: left;
+
+        // font-size: 0.3em;
     }
 
  	.wrap{
@@ -873,6 +902,12 @@ h4 {
  	}
 }
 @media all and (max-width:320px){
+        #william p {
+        padding-top: 1em;
+        text-align: left;
+
+        // font-size: 0.3em;
+    }
  	.wrap{
  		width:95%;
  	}

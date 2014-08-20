@@ -1,19 +1,3 @@
-<script type="text/javascript">
-
-function bindEvent(e, eventName, callback) {
-    if(e.addEventListener) // new browsers
-        e.addEventListener(eventName, callback, false);
-    else if(e.attachEvent) // IE
-        e.attachEvent('on'+ eventName, callback);
-};
-
-bindEvent(document.body, 'scroll', function(e) {
-    document.body.scrollLeft = 0;
-});
-
-</script>
-
-
 <div class="header" id="home">  
     <div class="header_top">
         <div class="wrap">
@@ -44,30 +28,25 @@ bindEvent(document.body, 'scroll', function(e) {
     <div class="intro" id="intro">
         <div class="wrap">
 <!--                <div id="trigger"></div> -->
-            <div id="william" style="text-align:center;">
-                <p>
-                <div id="animate" style="text-align:center; max-width:800px; overflow:hidden;
-position: absolute; width:800px;
-                ">
-                    <p style="text-align:center;">William Clarke</p>
+            <div id="william">
+                <!-- <p> -->
+                <div id="animate" >
+                    <p>William Clarke</p>
                     <!-- <p style="overflow:hidden; display:inline-block; border:2px solid black; text-align:center">William Clarke</p> -->
                 </div>
-</p>
-<div>
-       
-   </div>   
+<!-- </p> -->
+  
             </div>
-            <p id="trigger" style="height:12em; bottom:0; position:relative; text-align:center;">
-                <span style="position:absolute; bottom:0; text-align:center;" > Hola. This is my <span class="rotate">wonderful, inspiring, groovy, egotistical, funky</span> site.
+            <p id="trigger" style="height:8em; bottom:0; position:relative; text-align:center;">
+                <span style="position:absolute; bottom:0; right:0; text-align:center;" > Hola. This is my <span class="rotate">wonderful, inspiring, groovy, egotistical, funky</span> site.
                 </span>
 
                 </p>
-            <div id="icons">
+<!--             <div id="icons">
                 <i class="fa fa-envelope-square fa-4x"></i>
                 <i class="fa fa-facebook-square fa-4x"></i>
                 <i class="fa fa-twitter-square fa-4x"></i>
-                <!-- <i class="fa fa-envelope-square fa-4x faa-shake animated-hover"></i> -->
-            </div>
+            </div> -->
         </div>
     </div>
 </div>
@@ -391,7 +370,7 @@ position: absolute; width:800px;
     </div>
     <div class="timeline_" id="timeline_">
         <div class="wrap">
-    <h1>The most Interesting things about my life.</h1>
+    <h1 class="heading">The most Interesting things about my life.</h1>
             <div id="timeline">
                 <ul id="dates">
                     <li><a href="#2014" class="selected">2014</a></li>
@@ -530,8 +509,8 @@ position: absolute; width:800px;
                         <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
                     </li>
                 </ul>
-                <div id="grad_top" style="background: linear-gradient(to bottom, #EFC94C, rgba(0, 0, 0, 0));"></div>
-                <div id="grad_bottom" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0),  #EFC94C);"></div>
+                <div id="grad_top"></div>
+                <div id="grad_bottom"></div>
                 <a href="#" id="next">+</a>
                 <a href="#" id="prev">-</a>
             </div>

@@ -36,6 +36,14 @@
 //    #timeline h2 {
 //         font-size: 14px;
 //     }
+
+
+$orange: #E27A3F;
+
+
+#timeline_ .heading {
+    padding-top: 2em;
+}
 .sociales {
     text-align: center;
     margin-bottom: 20px;
@@ -130,11 +138,13 @@
         }
             #grad_top {
                 top: 0;
-                background: url('../assets/timeline/grad_top.png') repeat-x;
+                // background: url('../assets/timeline/grad_top.png') repeat-x;
+                background: linear-gradient(to bottom, $orange, rgba(0, 0, 0, 0));
             }
             #grad_bottom {
                 bottom: 0;
-                background: url('../assets/timeline/grad_bottom.png') repeat-x;
+                // background: url('../assets/timeline/grad_bottom.png') repeat-x;
+                background:linear-gradient(to bottom, rgba(0, 0, 0, 0), $orange)
             }
         
         #next,

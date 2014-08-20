@@ -16,6 +16,7 @@
 //= require jquery.isotope.min
 //= require custom
 //= require jquery.fancybox
+//= require jquery.simple-text-rotator
 //= require modernizr.custom
 //= require responsive-nav
 //= require jquery.scrollmagic

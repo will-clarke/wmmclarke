@@ -37,28 +37,45 @@ jQuery ->
   
   # sceneOptions = z{duration: 200, offset: -100}
   # build tween
-  tween = TweenMax.to("#animate", 0.5,
-    scale: 8
-    # ease: Back.easeOut, 
-    # rotation:36, 
+  getBigger = TweenMax.to("#animate", 0.5,
+    scale: 2
+    ease: Circ.easeOut, 
+    rotation: 15, 
     # textDecoration: "underline", 
     # color: "red"
   )
-  
+
+  getSmaller = TweenMax.to("#animate", 0.3,
+    scale: 0.5
+    ease: Cubic.easeOut, 
+    rotation: -15, 
+  # textDecoration: "underline", 
+  # color: "red"
+  )
+
   # build scene
+  # unless $(window).width() > 860
   new ScrollScene(
     triggerElement: "#william"
     duration: 200
     offset: 250
-  ).setTween(tween).addTo controller
-  # new ScrollScene(
-  #   triggerElement: "#icons"
-  #   offset: 500
-  # ).addTo(controller).triggerHook("onEnter").setTween TweenMax.from("#icons", 0.5,
-  #   scale: 0
-  #   ease: Elastic.easeOut
-  #   delay: 0.5
-  # )
+  ).setTween(getBigger).addTo controller
+
+  new ScrollScene(
+    triggerElement: "#trigger"
+    duration: 200
+    offset: 250
+  ).setTween(getSmaller).addTo controller
+
+
+    # new ScrollScene(
+    #   triggerElement: "#icons"
+    #   offset: 500
+    # ).addTo(controller).triggerHook("onEnter").setTween TweenMax.from("#icons", 0.5,
+    #   scale: 0
+    #   ease: Elastic.easeOut
+    #   delay: 0.5
+    # )
 
 
   $().timelinr
@@ -69,20 +86,22 @@ jQuery ->
     startAt: 3
 
   $(".rotate").textrotator()
+    # animation: "flip"
+    # speed: 1250    
 
-  isbig = true
-  $('#skills').mouseover ->
-    $('#william').css('scale: 0.125')
+  # isbig = true
+  # $('#skills').mouseover ->
+  #   $('#william').css('scale: 0.125')
     # animation: "spin" # You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
     # speed: 3500
     
-  bindEvent = (e, eventName, callback) ->
-  if e.addEventListener # new browsers
-    e.addEventListener eventName, callback, false
-  # IE
-  else e.attachEvent "on" + eventName, callback  if e.attachEvent
-bindEvent document.body, "scroll", (e) ->
-  document.body.scrollLeft = 0
+  #   bindEvent = (e, eventName, callback) ->
+  #   if e.addEventListener # new browsers
+  #     e.addEventListener eventName, callback, false
+  #   # IE
+  #   else e.attachEvent "on" + eventName, callback  if e.attachEvent
+  # bindEvent document.body, "scroll", (e) ->
+  #   document.body.scrollLeft = 0
 
   # $(".nav-collapse").responsiveNav
 
