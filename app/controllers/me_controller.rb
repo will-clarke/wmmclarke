@@ -4,4 +4,9 @@ class MeController < ApplicationController
 
   def blog
   end
+
+  def email
+  	
+  	
+  end
 end
