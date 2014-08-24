@@ -12,12 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.timelinr-0.9.54
 //= require turbolinks
-//= require _maps
 //= require jquery.isotope.min
-//= require gmaps
 //= require custom
-//= require jquery.fancybox
 //= require jquery.simple-text-rotator
 //= require modernizr.custom
 //= require responsive-nav
