@@ -112,7 +112,7 @@ line-height: 1.6em;
         overflow: hidden;
         margin: 40px auto;
         position: relative;
-        background: url('../assets/timeline/dot.gif') 3px top repeat-y;
+        background: asset-url('timeline/dot.gif') 3px top repeat-y;
     }
         #dates {
             width: 100px;
@@ -127,7 +127,7 @@ line-height: 1.6em;
                 line-height: 100px;
                 font-size: 24px;
                 padding-left: 10px;
-                background: url('../assets/timeline/biggerdot.png') left center no-repeat;
+                background: asset-url('timeline/biggerdot.png') left center no-repeat;
             }
                 #dates a {
                     line-height: 38px;
@@ -229,11 +229,11 @@ line-height: 1.6em;
             }
             #next {
                 bottom: 0;
-                background-image: url('../assets/timeline/next_v.png');
+                background-image: asset-url('timeline/next_v.png');
             }
             #prev {
                 top: 0;
-                background-image: url('../assets/timeline/prev_v.png');
+                background-image: asset-url('timeline/prev_v.png');
             }
                 #next.disabled,
                 #prev.disabled {

@@ -26,6 +26,10 @@
 //= require circles
 //= require jquery.nav
 
+//= require _maps
+//= require gmaps
+//= require init
+
 //= require custom
 //= require me
 
