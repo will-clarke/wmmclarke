@@ -12,15 +12,21 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require jquery.timelinr-0.9.54
 //= require turbolinks
+
+//= require jquery.timelinr-0.9.54
 //= require jquery.isotope.min
-//= require custom
 //= require jquery.simple-text-rotator
 //= require modernizr.custom
 //= require responsive-nav
+
 //= require jquery.scrollmagic
+//= require TweenMax
+
 //= require circles
 //= require jquery.nav
+
+//= require custom
 //= require me
+
 //= require_tree .
