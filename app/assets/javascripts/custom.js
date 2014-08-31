@@ -255,6 +255,9 @@ $(function() {
                 // apply width to container manually, then trigger relayout
                 $container.width(columns * colW)
                     .isotope('reLayout');
+
+                $container2.width(columns * colW)
+                    .isotope('reLayout');
             }
 
         }).smartresize(); // trigger resize to set container width
