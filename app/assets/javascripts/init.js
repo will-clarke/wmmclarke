@@ -12,17 +12,17 @@
 /*	gmaps
 ------------------------------------------------------*/
 
-   var map;
+   // var map;
 
    // main directions
-   map = new GMaps({
-      el: '#map', lat: 51.4988323, lng: -0.2356511, zoom: 13, zoomControl : true,
-      zoomControlOpt: { style : 'SMALL', position: 'TOP_LEFT' }, panControl : false, scrollwheel: false
-   });
+   // map = new GMaps({
+   //    el: '#map', lat: 51.4988323, lng: -0.2356511, zoom: 13, zoomControl : true,
+   //    zoomControlOpt: { style : 'SMALL', position: 'TOP_LEFT' }, panControl : false, scrollwheel: false
+   // });
 
    // add address markers
-   map.addMarker({ lat: 51.4988323, lng: -0.2356511, title: 'Hammersmith',
-   infoWindow: { content: 'Hammersmith' } });
+   // map.addMarker({ lat: 51.4988323, lng: -0.2356511, title: 'Hammersmith',
+   // infoWindow: { content: 'Hammersmith' } });
 
 /*----------------------------------------------------*/
 /*	contact form
