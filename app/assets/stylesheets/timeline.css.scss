@@ -10,15 +10,15 @@
 //     font-size: 14px;
 // }
 
-// #timeline a {
-//     color: #ffffcc;
-//     text-decoration: none;
-//     -webkit-transition: 0.5s;
-//     -moz-transition: 0.5s;
-//     -o-transition: 0.5s;
-//     -ms-transition: 0.5s;
-//     transition: 0.5s;
-// }
+#timeline a {
+    // color: #ffffcc;
+    // text-decoration: none;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+    transition: 0.5s;
+}
 // #timeline a:hover,
 // #timeline a.selected {
 //         color: #ffcc00;
@@ -61,8 +61,8 @@ font-size:2.5em;
 }
 
 #timeline_ h3 {
-padding-top: 1em;
-font-size: 1.4em;
+padding-top: 0.2em;
+font-size: 1em;
 color: #FFF;
 text-align: center;
 font-weight: 500;

@@ -219,7 +219,7 @@ img{max-width:100%;}
    	top:5px;
 }
 /*** main ****/
-.services h2,.timeline h2,.Skills h2,.projects h2,.about h2,.contact h2{
+.services h2,.timeline_ h2,.skills h2,.projects h2,.about h2,.contact h2, .interesting-stuff h2{
 	font-size:2.2em;
  	color:#FFF;
  	text-align:center;
@@ -227,7 +227,7 @@ img{max-width:100%;}
  	letter-spacing:5px;
  	-webkit-text-stroke-width:2px;
 }
-// .timeline h2,.Skills h2{
+// .timeline h2,.skills h2{
 //   color:#3c4761;	
 // }
 // .projects h2{
@@ -326,7 +326,7 @@ h4 {
 	line-height:1.6em;
 }
 /********* timeline *********/
-.timeline{
+.timeline_{
     background:#EFC94C;
 	/*background:#e7f1f8;*/
 	padding:5em 0;
@@ -416,12 +416,12 @@ h4 {
 .social_networks li a i.mail{
 	background-position:-96px -12px;
 }
-/******* Skills *********/
-.Skills{
+/******* skills *********/
+.skills{
 	background:#45B29D;
 	padding:5em 0;
 }
-// .Skills h4{
+// .skills h4{
 // 	color:#3c4761;
 // 	font-size:1.2em;
 // 	text-align:center;
@@ -435,6 +435,9 @@ h4 {
     margin: 0 auto 20px;
   }
 
+#container2 {
+    margin: 0 auto 20px;
+  }
 /*.element {
   float: left;
   background: #CCC;
@@ -450,7 +453,7 @@ h4 {
 	padding:5em 0;
 }
 .projects h4{
-	color:#393939;
+	// color:#393939;
 	font-size:1.2em;
 	text-align:center;
 	font-weight:600;
@@ -821,7 +824,7 @@ h4 {
  	.intro{
  		padding:4em 0 1em 0;
  	}
- 	.services h4,.Skills h4,.projects h4,.timeline h4{
+ 	.services h4,.skills h4,.projects h4,.timeline h4, .interesting-stuff h4{
  		width:100%;
  	}
  	.services_grids{
@@ -854,7 +857,10 @@ h4 {
     width: 150px;
     height: 150px;
 }
-
+#container2 li {
+    width: 150px;
+    height: 150px;
+}
  	.wrap{
  		width:95%;
  	}
@@ -887,7 +893,7 @@ h4 {
  	.intro p{
  		font-size:1.8em;
  	}
- 	.services h2, .timeline h2, .Skills h2, .projects h2, .about h2, .contact h2{
+ 	.services h2, .timeline_ h2, .interesting-stuff h2, .skills h2, .projects h2, .about h2, .contact h2{
  		font-size:1.5em;
  	}
  	.projects-wrapper h5{
@@ -915,10 +921,10 @@ h4 {
  	.wrap{
  		width:95%;
  	}
- 	.services,.timeline,.Skills,.projects,.about,.contact{
+ 	.services,.timeline,.skills,.interesting-stuff, .projects,.about,.contact{
  		padding:2em 0;
  	}
- 	.Skills h4,.projects h4,.timeline h4,.services h4,.contact h4{
+ 	.skills h4,.projects h4,.timeline h4,.services h4,.contact h4, .interesting-stuff h4{
  		font-size:1em;
  		padding-top:0;
  		padding-bottom:10px;

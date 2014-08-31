@@ -160,6 +160,29 @@ $(function() {
         // layoutMode: 'fitRows'
     });
 
+    var $container2 = $('#container2');
+    $container2.isotope({
+        sortBy: 'random',
+        itemSelector: '.element',
+
+        // omg 
+        resizable: false,
+        masonry: {
+            columnWidth: colW
+        },
+        // omg 
+
+
+
+        // masonry : {
+        //   columnWidth : 295
+        // },
+        masonryHorizontal: {
+            rowHeight: 360
+        }
+        // ,
+        // layoutMode: 'fitRows'
+    });
 
     $('#everything').click(function() {
         $container.isotope('shuffle');
@@ -241,9 +264,6 @@ $(function() {
 
 
 });
-
-
-
 
 
 
