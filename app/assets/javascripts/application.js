@@ -28,7 +28,6 @@
 
 //= require _maps
 //= require gmaps
-//= require init
 
 //= require custom
 //= require me

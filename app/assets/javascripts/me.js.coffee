@@ -104,6 +104,14 @@ jQuery ->
       scrollwheel: false
     )
 
+    # add address markers
+    map.addMarker
+      lat: 51.4988323
+      lng: -0.2356511
+      title: "Hammersmith"
+      infoWindow:
+        content: "Hammersmith"
+
 
 
   # isbig = true
