@@ -1,13 +1,12 @@
 class MessageController < ApplicationController
 	
-	def create
-		@message = Message.new
+	# def create
+	# 	@message = Message.new
+	# 	@message.name = params['name']
+	# 	@message.email = params['email']
+	# 	@message.message = params['message']
 
-		@message.name = params['name']
-		@message.email = params['email']
-		@message.message = params['message']
-
-		@message.save
+	# 	@message.save
 		
-	end
+	# end
 end
