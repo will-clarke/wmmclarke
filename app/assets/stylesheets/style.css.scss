@@ -29,7 +29,7 @@ nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
 img{max-width:100%;}
 /*end reset*/
  body{
-	 font-family: 'Titillium Web', sans-serif;
+	 font-family: 'Bitter', sans-serif;
 	 background:#FFF;
 	
  }
@@ -219,7 +219,7 @@ img{max-width:100%;}
    	top:5px;
 }
 /*** main ****/
-.services h2,.timeline_ h2,.skills h2,.projects h2,.about h2,.contact h2, .interesting-stuff h2{
+.services h2,.timeline_ h2,.skills h2,.projects h2,.map_ h2,.contact h2, .interesting-stuff h2{
 	font-size:2.2em;
  	color:#FFF;
  	text-align:center;
@@ -248,6 +248,7 @@ h4 {
 	margin:0 auto;	
 	padding-top: 1em;
 }
+
 .line{
 	text-align:center;
 }
@@ -257,19 +258,19 @@ h4 {
 	vertical-align:middle;
 }
 .green span{
-	background:#14a58c;
+	background:#45B29D;
 }
-.skyblue span{
-	background:#c8d9e5;
+.red span{
+	background:#DF5A49;
 }
 .yellow span{
-	background:#e5c37f;
+	background:#EFC94C;
 }
-.rose span{
-	background:#b73c6d;
+.orange span{
+	background:#E27A3F;
 }
-.blue span{
-	background:#273a71;
+.dark-green span{
+	background:#334D5C;
 }
 .services_grids{
 	margin-top:3em;
@@ -460,6 +461,7 @@ h4 {
 	width:50%;
 	margin:0 auto;
 	padding-top: 1em;	
+	padding-bottom: 1em;	
 }
 .container { 
 	  position: relative; 
@@ -571,12 +573,12 @@ h4 {
   width: 0;
   height: 0;
 }
-/******** About ********/
-.about{
+/******** map_ ********/
+.map_{
 	background:#E27A3F;
-	padding:5em 0;
+	padding:5em;
 }
-.about h4{
+.map_ h4{
 	color:#FFF;
 	font-size:1.2em;
 	text-align:center;
@@ -652,7 +654,7 @@ h4 {
 .contact input[type="text"],.contact textarea{
 	width:95%;
 	padding:15px 15px;
-	font-family:'Titillium Web', sans-serif;
+	font-family:'Bitter', sans-serif;
 	color: #FFF;
 	font-size:1.2em;
 	background:#273a71;
@@ -679,7 +681,7 @@ h4 {
 	resize:none;
 }
 .contact input[type="submit"]{
-	 font-family:'Titillium Web', sans-serif;
+	 font-family:'Bitter', sans-serif;
 	 display:inline-block;
      color:#FFF;
     font-size:1.2em;
@@ -893,7 +895,7 @@ h4 {
  	.intro p{
  		font-size:1.8em;
  	}
- 	.services h2, .timeline_ h2, .interesting-stuff h2, .skills h2, .projects h2, .about h2, .contact h2{
+ 	.services h2, .timeline_ h2, .interesting-stuff h2, .skills h2, .projects h2, .map_ h2, .contact h2{
  		font-size:1.5em;
  	}
  	.projects-wrapper h5{
@@ -921,7 +923,7 @@ h4 {
  	.wrap{
  		width:95%;
  	}
- 	.services,.timeline,.skills,.interesting-stuff, .projects,.about,.contact{
+ 	.services,.timeline,.skills,.interesting-stuff, .projects,.map_,.contact{
  		padding:2em 0;
  	}
  	.skills h4,.projects h4,.timeline h4,.services h4,.contact h4, .interesting-stuff h4{

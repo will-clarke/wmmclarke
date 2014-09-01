@@ -11,12 +11,12 @@
                 <!-- <ul class="nav nav-collapse" id="nav"> -->
                 <ul class="nav" id="nav">
                     <li class="current"><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
+                    <li><a href="#services">What I Do</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#interesting-stuff">Interesting Stuff</a></li>
                     <li><a href="#timeline_">Timeline</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="#map_">Map</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <div class="clear"></div>
                 </ul>
@@ -54,34 +54,32 @@
     
     <div class="services" id="services">
         <div class="wrap">
-            <h2>Stuff I do</h2>
-            <div class="line green"><span> </span></div>
-            <h4>We are working with both individuals and businesses from all over the globe to create awesome websites and applications.</h4>
+            <h2>What I do</h2>
+            <div class="line red"><span> </span></div>
+            <h4>I'm a ruby developer interested in web design.</h4>
             <div class="services_grids">
                 <div class="section group">
                     <div class="grid_1_of_4 services_1_of_4">
                         <%= image_tag "flag.png" %>
                         <h3>Web Development</h3>
-                        <p>Mainly in rails, with a healthy dose of front-end development.</p>
+                        <p>Mainly with rails.</p>
                     </div>
                     <div class="grid_1_of_4 services_1_of_4">
                         <%= image_tag "design.png" %>
                         <h3>Ruby Scripting</h3>
-                        <p>Automating simple tasks to make people's lives easier.</p>
+                        <p>Automation is efficient / lazy.</p>
                     </div>
                     <div class="grid_1_of_4 services_1_of_4">
                         <%= image_tag "development.png" %>
                         <h3>Data Analysis</h3>
-                        <p>2 years' experience of data analysis. Analytics is exciting.</p>
+                        <p>2 years' experience.</p>
                     </div>
 
 
                     <div class="grid_1_of_4 services_1_of_4">
                         <%= image_tag "rocket.png" %>
-                        <h3>Rocket science</h3>
-                        <p>Et harum quidem   <i class="fa fa-4x fa-github"></i>
-                        rerum est et expedita distinctio. Nam libero <%= fa_stacked_icon "twitter", base: "circle-o"
-                        %> tempore.</p>
+                        <h3>Javascripting</h3>
+                        <p>Especially with Google Scripts.</p>
 
                     </div>
                 </div>
@@ -92,7 +90,7 @@
     <div class="skills" id="skills">
         <div class="wrap">
             <h2>What I'm good at</h2>
-            <div class="line skyblue"><span> </span></div>
+            <div class="line orange"><span> </span></div>
             <h4>Here's a quick summary of what I've spent time doing.</h4>
             <div class="services_grids">
                 <div id="canvas">
@@ -124,6 +122,8 @@
                 <div class="section-title">
                     <!-- <h3 class="heading">Interesting Stuff</h3> -->
                     <h2>Interesting stuff</h2>
+                                <div class="line yellow"><span> </span></div>
+
                     <div id="options" class="interesting-stuff">
                         <ul id="filters" class="option-set interesting-stuff" data-option-key="filter">
                             <li><a href="#filter" data-option-value=".code">Code Stuff</a></li>
@@ -372,6 +372,7 @@
         <div class="wrap">
             <!-- <h1 class="heading">My life summed up.</h1> -->
 <h2>My Life Summed Up</h2>
+            <div class="line green"><span> </span></div>
 
             <div id="timeline">
                 <ul id="dates">
@@ -489,7 +490,7 @@
                 <div class="section-title">
 
             <h2>My projects</h2>
-            <div class="line yellow"><span> </span></div>
+            <div class="line orange"><span> </span></div>
             <h4>A few of my projects on Github</h4>
 
 
@@ -515,7 +516,7 @@
                                 <figcaption>
                                 <h3>Reddit Downloader</h3>
                                 <div class="meta-box interesting-stuff">
-                                    <span class="entry-categories">Download Reddit Wallpapers.</span>
+                                    <span class="entry-categories">Download Wallpapers from popular subreddit.</span>
                                 </div>
                                 <footer>
                                     <div class="nivo-lightbox-demo"> <p> <a href="https://github.com/wmmc/Wallpaper-Downloader/blob/master/imgur.rb" target="_blank" data-lightbox-gallery="gallery1" class="nivo-lightbox-demo"> Link </a> </p></div>
@@ -575,7 +576,7 @@
                                 <figcaption>
                                 <h3>This site</h3>
                                 <div class="meta-box interesting-stuff">
-                                    <span class="entry-categories">Wow. Meta. I'm confused.</span>
+                                    <span class="entry-categories">Wow. Meta.</span>
                                 </div>
                                 <footer>
                                     <div class="nivo-lightbox-demo"> <p> <a href="https://github.com/wmmc/wmmclarke" target="_blank" data-lightbox-gallery="gallery1" class="nivo-lightbox-demo"> Link </a> </p></div>
@@ -617,8 +618,13 @@
         </div>
     </div>
     </div>
-    <div class="about" id="about">
-        <div class="wrap">
+    <div class="map_" id="map_">
+        <div class="wrap">      
+
+        <h2>Where I'm from</h2>
+            <div class="line red"><span> </span></div>
+            <br>
+            <h4>Hammersmith, London</h4>
             <section class="map" id="map">
                 <p class="map-error">Sorry... Unable to load map... Please try to enable javascript</p>
             </section>
@@ -628,7 +634,7 @@
     <div class="contact" id="contact">
         <div class="wrap">
             <h2>Get in Touch</h2>
-            <div class="line blue"><span> </span></div>
+            <div class="line orange"><span> </span></div>
             <h4>
             <div class="social-icons-row">
                 <div class="social-icons">
@@ -672,7 +678,7 @@
         </div>
         <!-- </div> -->
     </div>
-    // <script>
+    <script>
     //  var nav = responsiveNav(".nav-collapse", { // Selector
     //   animate: true, // Boolean: Use CSS3 transitions, true or false
     //   // transition: 500s, // Integer: Speed of the transition, in milliseconds
