@@ -4,6 +4,11 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 */
+$red: #DF5A49;
+$orange: #E27A3F;
+$yellow: #EFC94C;
+$green: #45B29D;
+$dark-green: #334D5C;
 /* reset */
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
 article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
@@ -129,13 +134,26 @@ img{max-width:100%;}
     	-moz-border-radius:0;
     	-o-border-radius:0;
     }
+    .nav:hover {
+    	border-radius:5px;
+    	-webkit-border-radius:5;
+    	-moz-border-radius:5;
+    	-o-border-radius:5;
+    }
     .nav {
+    	border-radius:5px;
+    	-webkit-border-radius:5;
+    	-moz-border-radius:5;
+    	-o-border-radius:5;
+    border:1px solid #E27A3F;
+
      list-style: none;
      *zoom: 1;
      width:95%;
 	 position: absolute;
 	 right:10px;
-	 background:#292F46;
+	 // background:#292F46;
+    background: darken(#df5a49, 2%);
 	 top:62px;
     }
     .nav:after {
@@ -145,7 +163,7 @@ img{max-width:100%;}
 		top: -9px;
 		border-left:10px solid rgba(0, 0, 0, 0);
 		border-right:10px solid rgba(0, 0, 0, 0);
-		border-bottom:10px solid #292F46;
+		border-bottom:10px solid  darken(#df5a49, 2%);
 	}
     .menu li a span.messages{
     	text-align:center;
@@ -172,7 +190,7 @@ img{max-width:100%;}
         position: static;
     }
     .nav li a{
-    	border-top:1px solid #1F253D;
+    	border-top:1px solid #E27A3F;
     }
      .nav li:first-child a{
      	border-top:none;
@@ -686,24 +704,24 @@ h4 {
      color:#FFF;
     font-size:1.2em;
     text-transform:uppercase;
-    background:#30bae7;
+    background:$orange;
     padding:18px 3em;
     border:none;
-    border-bottom:4px solid #299ec5;
+    border-bottom:4px solid $red;
     border-radius:5px;
    -webkit-border-radius:5px;
    -moz-border-radius:5px;
    -o-border-radius:5px;
-    -webkit-transition: all 0.3s ease;
-		-moz-transition: all 0.3s ease;
-		-o-transition: all 0.3s ease;
-		transition: all 0.3s ease;
+    -webkit-transition: all 0.7s ease;
+		-moz-transition: all 0.7s ease;
+		-o-transition: all 0.7s ease;
+		transition: all 0.7s ease;
 	-webkit-appearance:none;
 	outline:none;
 	cursor:pointer;
 }
 .contact input[type="submit"]:hover{
-	background:#2AACD6;
+	background:$red;
 }
 .contact input[type="submit"]:active{
 	position:relative;
@@ -797,6 +815,11 @@ h4 {
 	.wrap{
 		width:90%;
 	}
+
+	 	.menu li a{
+ 		font-size:0.9em;
+ 		padding:5px 15px; 		
+ 	} 
 }
 @media only screen and (max-width: 1280px) {
 	.wrap{
@@ -808,9 +831,44 @@ h4 {
  		width:90%;
  	}
  	.menu li a{
- 		font-size:0.85em;
+ 		font-size:0.8em;
  		padding:5px 15px; 		
  	} 
+
+    #william {
+                padding-top: 1em;
+                text-align: left;
+        font-size: 0.8em;
+    }
+
+ 	.wrap{
+ 		width:95%;
+ 	}
+ 	.intro{
+ 		padding:4em 0 1em 0;
+ 	}
+ 	.services h4,.skills h4,.projects h4,.timeline h4, .interesting-stuff h4{
+ 		width:100%;
+ 	}
+ 	.services_grids{
+ 		margin-top:0;
+ 	}
+ 	.grid_1_of_4{
+ 		margin:0;
+ 	}
+ 	.services_1_of_4,.timeline_1_of_4{
+ 		width:94%;
+ 		padding:3%;
+ 	}
+ 	.services_1_of_4 img,.timeline_1_of_4 img{
+ 		margin:0;
+ 	}
+ 	.contact input[type="text"], .contact textarea{
+ 		width:91%;
+ 	}
+
+
+
  }
  @media all and (max-width:800px){
 

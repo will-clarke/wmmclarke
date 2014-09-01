@@ -4,6 +4,9 @@ Rails.application.routes.draw do
 
   get 'me/blog'
 
+  post 'me/index'
+
+  # resources :message
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
