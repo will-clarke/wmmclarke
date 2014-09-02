@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   get 'me/blog'
 
-  post 'me/index'
+  post 'me/new_message'
 
   # resources :message
   # The priority is based upon order of creation: first created -> highest priority.

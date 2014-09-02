@@ -52,6 +52,19 @@ figure {
     height: 100%;
 }
 
+.flash-notice {
+    background-color: $green;
+    padding: 2em;
+    margin: 1em;
+    font-size: 1.4em;
+    color: #fff;
+
+    border-radius:2em;
+    -webkit-border-radius:2em;
+    -moz-border-radius:2em;
+    -o-border-radius:2em;
+
+}
 
 // rgb(223, 90, 73)
 // rgb(226, 122, 63)

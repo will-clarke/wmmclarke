@@ -633,7 +633,7 @@
                                     </a>
                                 </div>
                                 <div class="social-icons">
-                                    <a href="mailto:wmmclarke@gmail.com?subject=Feedback From Your Website">
+                                    <a href="mailto:wmmclarke@gmail.com?subject=From Your Website...">
                                         <i class="fa fa-envelope-square fa-4x faa-shake animated-hover"></i>
                                     </a>
                                 </div>
@@ -641,7 +641,13 @@
                             </h4>
 
 
-       <%= form_for @message, url: me_index_path  do |f|%>
+
+
+        <% flash.each do |name, msg| %>
+            <%= content_tag :div, msg, class: "flash-notice animated rubberBand" %>
+        <% end %>
+
+       <%= form_for @message, url: me_new_message_path do |f|%>
                                 
                                 <div class="text-box">
                                 <label>

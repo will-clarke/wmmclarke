@@ -5,6 +5,7 @@ gem 'pg', group: :production
 gem 'rails_12factor', group: :production
 gem "font-awesome-rails"
 gem 'better_errors', group: :development
+gem 'binding_of_caller', group: :development
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
