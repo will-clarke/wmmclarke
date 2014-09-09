@@ -1,14 +1,16 @@
 Rails.application.routes.draw do
-  resources :blogs
+  # resources :comments
+
+  # resources :blogs
 
   post 'me/new_message'
   get 'me/blog'
   get 'me/index'
   root 'me#index'
 
-# resources :blogs do 
-#   resources :comments, only: [:create]
-# end
+resources :blogs do 
+  resources :comments, only: [:create]
+end
 
   # resources :message
   # The priority is based upon order of creation: first created -> highest priority.
