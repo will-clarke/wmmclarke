@@ -1,3 +1,10 @@
+<p id="notice"><%= notice %></p>
+
+<h2><%= link_to_unless_current @blog.title, @blog %></h2>
+<%= simple_format @blog.body %>
+
+
+
 <p>
   <strong>Title:</strong>
   <%= @post.title %>
