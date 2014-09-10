@@ -6,7 +6,7 @@ class CommentsController < ApplicationController
     end
     private
     def blog_param
-        params.require('blog')
+        params.require('blog_id')
     end
     def comment_param
         params.require('comment').permit('body')
