@@ -107,7 +107,7 @@ line-height: 1.6em;
 }
 
     #timeline {
-        width: 500px;
+        width: 520px;
         height: 35em;
         overflow: hidden;
         margin: 40px auto;
@@ -115,14 +115,14 @@ line-height: 1.6em;
         background: asset-url('timeline/dot.gif') 3px top repeat-y;
     }
         #dates {
-            width: 100px;
+            width: 120px;
             height: 600px;
             overflow: hidden;
             float: left;
         }
             #dates li {
                 list-style: none;
-                width: 100px;
+                width: 130px;
                 height: 100px;
                 line-height: 100px;
                 font-size: 24px;
