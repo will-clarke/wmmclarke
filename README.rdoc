@@ -1,25 +1,7 @@
-Lovely colours:
-
-red: #DF5A49
-orange: #E27A3F
-yellow: #EFC94C
-green: #45B29D
-dark green: #334D5C
+# My Website: [wmmclarke.com](http://www.wmmclarke.com)
+____
 
 
+Click [here](http://www.wmmclarke.com) to see my site. I think it's pretty snazzy.
 
-rgb(223, 90, 73)
-rgb(226, 122, 63)
-rgb(239, 201, 76)
-rgb(69, 178, 157)
-rgb(51, 77, 92)
-
-
-intro
-services
-skills
-interesting-stuff
-timeline
-portfolio
-about
-contact
+Prepare to be amazed at how totally awesome I say I am.
