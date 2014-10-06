@@ -10,13 +10,14 @@
                 </a>
                 <!-- <ul class="nav nav-collapse" id="nav"> -->
                 <ul class="nav" id="nav">
+                    <li><a href="http://wmmc.github.io" target="_blank">Blog</a></li>
                     <li class="current"><a href="#home">Home</a></li>
                     <li><a href="#services">What I Do</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#interesting-stuff">Interests</a></li>
                     <li><a href="#timeline_">Timeline</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#map_">Map</a></li>
+                    <!-- <li><a href="#map_">Map</a></li> -->
                     <li><a href="#contact">Contact</a></li>
                     <div class="clear"></div>
                 </ul>
@@ -35,7 +36,6 @@
                     <!-- <p style="overflow:hidden; display:inline-block; border:2px solid black; text-align:center">William Clarke</p> -->
                 </div>
                 <!-- </p> -->
-                
             </div>
             <p id="trigger" style="height:8em; bottom:0; position:relative; text-align:center;">
             <span style="position:absolute; bottom:0; right:0; text-align:center;" > Hola. This is my <span class="rotate">wonderful, inspiring, groovy, egotistical, funky</span> site.
@@ -434,7 +434,7 @@
                         <p>
                         <h3>Royal Opera House</h3>
                         
-                        <br><i class="fa fa-caret-right"></i> Covent Garden - I stared as Fleance in Verdi's Macbeth.
+                        <br><i class="fa fa-caret-right"></i> Covent Garden - I starred as Fleance in Verdi's Macbeth.
                         <br>
                         <!-- <br><i class="fa fa-caret-right"></i> Sadly my acting career went downhill from here. -->
                         </p>
@@ -609,31 +609,35 @@
                         </section>
                     </div>
                 </div>
-                
+
                 <div class="contact" id="contact">
                     <div class="wrap">
                         <h2>Get in Touch</h2>
                         <div class="line orange"><span> </span></div>
                         <h4>
                         <div class="social-icons-row">
-                            <div class="social-icons">
-                                <div class="social-icons">
-                                    <a href="http://www.github.com/wmmc">
+                              <div class="social-icons">
+                                    <a class="open-event" href="http://www.github.com/wmmc" title=Github>
                                         <i class="fa fa-github-square fa-4x faa-tada animated-hover"></i>
                                     </a>
                                 </div>
                                 <div class="social-icons">
-                                    <a href="http://www.facebook.com/wmmclarke">
+                                    <a class="open-event" href="http://wmmc.github.io" title="Blog">
+                                        <i class="fa fa-pencil-square fa-4x faa-pulse animated-hover"></i>
+                                    </a>
+                                </div>
+                                <div class="social-icons">
+                                    <a href="http://www.facebook.com/wmmclarke" class="open-event" title="Facebook">
                                         <i class="fa fa-facebook-square fa-4x faa-vertical animated-hover"></i>
                                     </a>
                                 </div>
                                 <div class="social-icons">
-                                    <a href="http://www.twitter.com/sir__archibald">
+                                  <a href="http://www.twitter.com/wmmclarke" class="open-event" title="Twitter">
                                         <i class="fa fa-twitter-square fa-4x faa-spin animated-hover"></i>
                                     </a>
                                 </div>
                                 <div class="social-icons">
-                                    <a href="mailto:wmmclarke@gmail.com?subject=From Your Website...">
+                                  <a href="mailto:wmmclarke@gmail.com?subject=From Your Website..." class="open-event" title="Email">
                                         <i class="fa fa-envelope-square fa-4x faa-shake animated-hover"></i>
                                     </a>
                                 </div>
@@ -648,7 +652,6 @@
         <% end %>
 
        <%= form_for @message, url: me_new_message_path do |f|%>
-                                
                                 <div class="text-box">
                                 <label>
                                 <%= f.text_field :name, value: 'Your Name:', onfocus:"this.value = '';", onblur:"if (this.value == '') {this.value = 'Your Name:'};" %>
@@ -662,8 +665,6 @@
                                 <%= f.submit :message, value: 'Send Message' %>
 
                         <% end %>
-                       
-
 
                         </div>
                     </div>
