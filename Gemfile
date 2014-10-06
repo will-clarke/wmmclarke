@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+gem 'shortener'
 gem 'pg', group: :production
 gem 'rails_12factor', group: :production
 gem "font-awesome-rails"
