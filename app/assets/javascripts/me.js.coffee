@@ -21,10 +21,13 @@ jQuery ->
       return
 
   $("#nav").onePageNav
+
     begin: ->
       console.log "start"
+
     end: ->
       console.log "stop"
+
     filter: ':not(.blog)'
 
   circlesCreated = false
