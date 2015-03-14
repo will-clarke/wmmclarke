@@ -1,4 +1,5 @@
 Rails.application.configure do
+  config.serve_static_files = true
 
   config.serve_static_files = true
 

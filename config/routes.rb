@@ -1,8 +1,14 @@
+require 'subdomain'
+
 Rails.application.routes.draw do
   # resources :comments
   # resources :blogs
 
   get "/blog" => redirect("http://wmmc.github.io/blog/")
+
+  # constraints Constraints::CustomSubdomain do
+    get '(*path)' => 'application#blog', :constraints => {subdomain: 'blog'}
+  # end
 
   # get '/:id' => "shortener/shortened_urls#show"
 
