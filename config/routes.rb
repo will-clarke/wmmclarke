@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   # resources :comments
   # resources :blogs
 
+  get "/blog" => redirect("http://wmmc.github.io/blog/")
+
   # get '/:id' => "shortener/shortened_urls#show"
 
   post 'me/new_message'
