@@ -27,6 +27,7 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
+    addressable (2.3.7)
     arel (5.0.1.20140414130214)
     better_errors (2.0.0)
       coderay (>= 1.0.0)
@@ -66,6 +67,12 @@ GEM
     pg (0.17.1)
     polyglot (0.3.5)
     rack (1.5.2)
+    rack-canonical-host (0.1.0)
+      addressable
+      rack (~> 1.0)
+    rack-reverse-proxy (0.4.4)
+      rack (>= 1.0.0)
+    rack-rewrite (1.5.1)
     rack-test (0.6.2)
       rack (>= 1.0)
     rails (4.1.4)
@@ -181,6 +188,9 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   pg
+  rack-canonical-host
+  rack-reverse-proxy
+  rack-rewrite
   rails (= 4.1.4)
   rails_12factor
   sass-rails (~> 4.0.3)

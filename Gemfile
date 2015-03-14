@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+gem 'rack-rewrite'
+gem 'rack-canonical-host'
+gem "rack-reverse-proxy", require: "rack/reverse_proxy"
 gem 'shortener'
 gem 'pg', group: :production
 gem 'rails_12factor', group: :production
