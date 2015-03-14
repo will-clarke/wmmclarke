@@ -1,17 +1,18 @@
 Rails.application.routes.draw do
   # resources :comments
   # resources :blogs
+  # get '/blog' => redirect('/blog/')
 
-get '/:id' => "shortener/shortened_urls#show"
+  # get '/:id' => "shortener/shortened_urls#show"
 
   post 'me/new_message'
   get 'me/blog'
   get 'me/index'
   root 'me#index'
 
-resources :blogs do 
-  resources :comments, only: [:create]
-end
+  resources :blogs do
+    resources :comments, only: [:create]
+  end
 
   # resources :message
   # The priority is based upon order of creation: first created -> highest priority.
