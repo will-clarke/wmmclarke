@@ -8,7 +8,7 @@ end
 
 use Rack::ReverseProxy do
   reverse_proxy_options preserve_host: true
-  reverse_proxy(/^\/blog(\/?.*)$/, 'http://wmmc.github.io$1')
+  reverse_proxy(/^\/blog(\/?.*)$/, 'http://wmmc.github.io/blog$1')
 end
 
 use Rack::CanonicalHost, ENV['CANONICAL_HOST'] if ENV['CANONICAL_HOST']
