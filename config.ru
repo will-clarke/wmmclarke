@@ -7,7 +7,7 @@ use Rack::Rewrite do
 end
 
 use Rack::ReverseProxy do
-  reverse_proxy_options preserve_host: true
+  reverse_proxy_options preserve_host: false
   reverse_proxy(/^\/blog(\/?.*)$/, 'http://wmmc.github.io/blog$1')
 end
 
