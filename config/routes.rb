@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   # resources :comments
   # resources :blogs
+  #
+  get "/:page_name" => redirect("/blog/%{page_name}"), :constraints => { :subdomain => /blog/ }
 
   # get '/:id' => "shortener/shortened_urls#show"
   post 'me/new_message'
