@@ -11,10 +11,10 @@ require ::File.expand_path('../config/environment',  __FILE__)
 #   # reverse_proxy(/^\/blog(\/?.*)$/, 'http://54.72.249.164/blog$1')
 # end
 
-# use Rack::ReverseProxy do
-#   reverse_proxy_options preserve_host: true
-#   reverse_proxy(/^\/blog(\/?.*)$/, 'http://wmmc.github.io/blog$1')
-# end
+use Rack::ReverseProxy do
+  reverse_proxy_options preserve_host: true
+  reverse_proxy(/^\/blog(\/?.*)$/, 'http://wmmc.github.io/blog$1')
+end
 
 use Rack::CanonicalHost, ENV['CANONICAL_HOST'] if ENV['CANONICAL_HOST']
 
