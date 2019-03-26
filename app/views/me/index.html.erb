@@ -650,6 +650,9 @@
 
                                 <%= f.text_field :email, value: 'Your Email:', onfocus:"this.value = '';", onblur:"if (this.value == '') {this.value = 'Your Email:'};" %>
                                 </label>
+
+                                <%= f.text_field :tricky_sum, value: 'What is five add two? (to stop spammy bots)', onfocus:"this.value = '';", onblur:"if (this.value == '') {this.value = 'What is five add two?'};" %>
+                                </label>
                                 </div>
                                 <%= f.text_area :message, value: 'Your Message:', size: 20, onfocus:"this.value = '';", onblur:"if (this.value == '') {this.value = 'Your Message:'};" %>
                                 <%= f.submit :message, value: 'Send Message' %>
