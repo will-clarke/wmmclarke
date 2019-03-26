@@ -4,7 +4,7 @@ gem 'rack-rewrite'
 gem 'rack-canonical-host'
 gem "rack-reverse-proxy", require: "rack/reverse_proxy"
 gem 'shortener'
-gem 'pg', group: :production
+gem 'pg', '~> 0.20', group: :production
 gem 'rails_12factor', group: :production
 gem "font-awesome-rails"
 gem 'better_errors', group: :development
